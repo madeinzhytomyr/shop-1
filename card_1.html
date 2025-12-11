@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <!-- NAZWA -->
+    <!-- NAZWA -->
+    <!-- NAZWA -->
+    <!-- NAZWA -->
+    <!-- NAZWA -->
+
+    <title>DonutLOVE</title>
+
+
+    <!-- ICONKA -->
+    <!-- ICONKA -->
+    <!-- ICONKA -->
+    <!-- ICONKA -->
+    <!-- ICONKA -->
+
+    <link rel="icon"
+        href="https://static.vecteezy.com/system/resources/previews/024/663/549/non_2x/taste-unique-food-illustration-donuts-logo-with-a-bite-taken-out-of-it-and-donut-icon-design-with-donut-template-elements-with-color-emblem-vector.jpg"
+        type="image/png">
+
+
+    <!-- CSS -->
+    <!-- CSS -->
+    <!-- CSS -->
+    <!-- CSS -->
+    <!-- CSS -->
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css" media="all">
+
+
+    <!-- шрифти -->
+    <!-- шрифти -->
+    <!-- шрифти -->
+    <!-- шрифти -->
+    <!-- шрифти -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chela+One&family=Chewy&family=DynaPuff:wght@400..700&family=Rubik+Spray+Paint&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="m-0 p-0 bg-body ">
+
+
+
+  <!-- ======== HEADER ======== -->
+  <!-- ======== HEADER ======== -->
+  <!-- ======== HEADER ======== -->
+  <!-- ======== HEADER ======== -->
+  <!-- ======== HEADER ======== -->
+  <!-- ======== HEADER ======== -->
+  <header style="z-index: 10 !important;" class="m-0 p-0 d-flex justify-content-center  position-relative ">
+
+    <div style="position: fixed; box-shadow: 1px 1px 15px gray; background-color: #ff3399;"
+      class="m-0 p-0 container-fluid  border-bottom border-white border-3">
+      <div id="rounded" style=" max-width: 1320px;"
+      class="m-0 p-0 py-1 px-3 px-xxl-0  mx-auto row justify-content-between align-items-center   ">
+
+        <a href="/" class="m-0 p-3 col-auto fs-2 text-white fw-bold ">DonutLOVE</a>
+
+        <!-- Навігація -->
+        <div class="m-0 p-0 col-auto d-none d-lg-block">
+          <div class="m-0 p-2 row justify-content-center">
+            <a href="#uber" class="my_link col-auto ">ÜBER UNS</a>
+            <a href="#products" class="my_link col-auto">DONUTS BOX</a>
+            <a href="#lieferung" class="my_link col-auto">LIFERUNG</a>
+            <a href="#kontakt" class="my_link col-auto">KONTAKT</a>
+          </div>
+        </div>
+
+        <!-- Кнопки справа -->
+        <div class="m-0 p-0 col-auto">
+          <div class="m-0 p-0 row justify-content-end align-items-center">
+
+
+            <!-- кошик -->
+            <div class="m-0 p-0 col-auto">
+              <div class="m-0 p-0 row justify-content-center align-items-center">
+                <div class="m-0 p-0 mx-3 col-auto position-relative">
+
+                  <a href="#" id="openCart" class="my_icon me-2 col-auto fa-solid fa-basket-shopping"
+                    style="cursor: pointer;"></a>
+
+                  <div id="totalAmount"
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-white text-danger fw-bold small">
+                    0</div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- <a href="/buy.html" class="my_link m-0 p-3 ps-0 col-auto d-none d-md-block text-white ">Warenkorb</a> -->
+
+            <!-- Кнопки бургер / закриття -->
+            <div class="m-0 p-0 col-auto">
+              <div class="m-0 p-0 row justify-content-center ">
+
+                <div id="close-menu" class="my_icon col-auto  d-none fa-solid fa-xmark "></div>
+                <div id="burger-menu" class="my_icon col-auto fs-3 d-flex d-lg-none fa-solid fa-bars">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Навігація -->
+        <div id="nav-links" class="m-0 p-0 py-2 col-auto d-none d-lg-none border-top">
+          <div class="m-0 p-2 row justify-content-start">
+            <a href="#uber" class="my_link col-12 text-start ">ÜBER UNS</a>
+            <a href="#products" class="my_link col-12  text-start ">DONUTS BOX</a>
+            <a href="#lieferung" class="my_link col-12 text-start ">LIFERUNG</a>
+            <a href="#kontakt" class="my_link col-12 text-start  ">KONTAKT</a>
+          </div>
+        </div>
+
+        <!-- ======== БІЧНЕ ВІКНО КОШИКА ======== -->
+        <div id="sideCart" class="m-0 p-0 row side-cart">
+
+          <div style="background-color: #ff3399; border-bottom: 4px solid #ff3399;"
+            class="m-0 p-2 row side-cart-header ">
+
+            <div class="m-0 p-3 col-auto fs-4 text-white">Mein Warenkorb</div>
+
+            <button id="closeCart" class="my_icon me-2 col-auto fa-solid fa-xmark ">
+            </button>
+
+          </div>
+
+          <div id="cartContent" class="m-0 p-0 px-3  side-cart-content">
+
+            <div id="usersContainer" class="m-0 p-0 py-3 col-12  d-flex flex-column">
+              <div
+                class="empty-cart-alert d-flex flex-column align-items-center justify-content-center text-center p-5 rounded-4 shadow-sm text-danger">
+
+                <i class="fas fa-shopping-cart fa-4x mb-3 cart-icon"></i>
+
+                <strong class="fs-4">Der Warenkorb ist leer.</strong>
+
+                <p class="mt-2 mb-0 text-muted fs-5">
+                  Fügen Sie Produkte hinzu, um Ihren Einkauf zu starten! 🍩
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="m-0 p-3 row side-cart-footer">
+
+            <div class="m-0 p-3 px-2 d-flex justify-content-between fw-bold">
+              <span class="m-0 p-0 fs-5">Gesamt:</span>
+              <span class="m-0 p-0 fs-5" id="cartTotalPrice">€0.00</span>
+            </div>
+
+            <a href="/zahlung.html" class="my_button col-12 ">
+              <i class="m-0 p-0 fa-solid fa-credit-card"></i>
+              <span class="m-0 p-0 ps-2">Zur Kasse</span>
+            </a>
+
+          </div>
+        </div>
+
+        <div id="cartBackdrop" class="m-0 p-0  wow cart-backdrop"></div>
+
+
+      </div>
+    </div>
+  </header>
+
+
+    <!-- загальний стиль */ -->
+    <!-- загальний стиль */ -->
+    <!-- загальний стиль */ -->
+    <!-- загальний стиль */ -->
+    <!-- загальний стиль */ -->
+
+    <div style="margin: 0px; margin-top: 120px;" class=" p-3  d-flex justify-content-center ">
+        <div class="m-0 p-0 container">
+            <div class="m-0 p-0 row g-5 align-items-center justify-content-center product-card">
+
+
+                <!-- === IMAGE === -->
+                <div class="m-0 p-3 col-12 col-md-6 product-image row border-0">
+                    <div style="cursor: pointer; box-shadow: 1px 1px 15px gray;"
+                        class="m-0 p-0 col-12  position-relative rounded-5 border border-white border-3"
+                        style="overflow:hidden;">
+
+                        <img src="/image/1a.webp" class="m-0 p-0 carousel-img rounded-5 active w-100 h-100"
+                            style="object-fit: cover;">
+
+                        <img src="/image/1b.webp" class="m-0 p-0 carousel-img rounded-5 active w-100 h-100"
+                            style="object-fit: cover;">
+
+                        <img src="/image/1c.webp" class="m-0 p-0 carousel-img rounded-5 active w-100 h-100"
+                            style="object-fit: cover;">
+
+                        <img src="/image/1d.webp" class="m-0 p-0 carousel-img rounded-5 active w-100 h-100"
+                            style="object-fit: cover;">
+
+                        <img src="/image/1e.webp" class="m-0 p-0 carousel-img rounded-5 active w-100 h-100"
+                            style="object-fit: cover;">
+
+                        <div
+                            class="m-0 p-3 carousel-dots position-absolute bottom-0 start-50 translate-middle-x d-flex gap-3">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="1"></span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                
+
+
+
+                <!-- === Інформація === -->
+                <div class="m-0 p-3 col-12 col-md-6 rounded-5">
+
+                    <div class="m-0 p-3 row justify-content-center align-items-center">
+
+                        <h1 class="mb-4 fw-bold" data-aos="fade-up" data-aos-delay="200" style="color:#ff3399; font-size: 42px;">
+                            Verwandle jeden Moment in einen süßen Genuss
+                          </h1>
+
+                          <h1 class="mb-4 fw-bold " data-aos="fade-up" data-aos-delay="200" style="color:#ff3399; font-size: 42px;">
+                            €45.75 <span class="m-0 p-0 fs-6 small  text-secondary ps-4 fw-normal">(12 donuts)</span>
+                          </h1>
+
+
+
+                          <p class="mb-4" data-aos="fade-up" data-aos-delay="300" style="font-size: 18px; color:#444;">
+                            Sweet galaxy experience — handmade vegan
+                            donuts that melt in your mouth. Taste the universe. Crafted for dreamers & dessert lovers.
+                          </p>
+
+
+
+
+                          <div class="m-0 p-3 row justify-content-cen6ter align-items-center ">
+
+                            <label class="m-0 p-0 col-auto fs-6 text-dark pe-3 fw-bold">Menge:</label>
+    
+                            <button style="width: 42px;" class="my_button p-0  col-auto fs-4" id="minus">−</button>
+    
+                            <input style="width: 48px;" type="text" id="value" value="1" readonly
+                                class="m-2 p-0 py-2 col-auto text-center border-0 rounded-4">
+    
+                            <button style="width: 42px;" class="my_button p-0 col-auto fs-4" id="plus">+</button>
+    
+                        </div>
+
+
+
+
+                        
+                    <div class="m-0 p-3">
+
+                        <button id="openCart1" class="my_button  p-3 px-5"
+                            onclick="addUserFromInput('/image/1a.webp','Naschkatze Box','45.75', '/card_1.html')">
+                            <i class="m-0 p-0 fa-solid fa-basket-shopping "></i>
+                            <span class="m-0 p-0 ps-2">In Den Corb</span>
+                        </button>
+
+
+                    </div>
+
+
+                    </div>
+
+                 
+
+
+                  
+
+                  
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- СУЧАСНИЙ ОПИС -->
+    <!-- СУЧАСНИЙ ОПИС -->
+    <!-- СУЧАСНИЙ ОПИС -->
+    <!-- СУЧАСНИЙ ОПИС -->
+
+    <div class="m-0 p-3 py-5 my-5 d-flex justify-content-center">
+        <div class="m-0 p-0 container">
+
+            <!-- <div class="m-0 p-2 row justify-content-center">
+                <div class="m-0 p-2 col-auto">
+                    <h1 class="my_title"> Unsere Donuts </h1>
+                </div>
+
+                <div class="m-0 p-2 col-12 text-center small">
+                    Bequem Nach Hause Delivery
+                </div>
+            </div> -->
+
+            <!-- Тут рендеряться пончики -->
+            <div id="unsere_donuts" class="m-0 p-0 row align-items-center">
+
+                <!-- наші пончики опис через джава скріпт -->
+                <script>
+                    const products = [
+                        {
+                            image_1: "/image/1c.webp",
+                            image_2: "/image/1d.webp",
+                            name: "DARTH BAKER",
+                            description: "Ball mit Himbeerkonfitüre, Schokoglasur, schwarzen & roten Streuseln, rotem Buttercreme-Swirl und Darth-Vader-Schoko.",
+                            allergene: "Gluten, Soja"
+                        },
+                        {
+                            image_1: "/image/2c.webp",
+                            image_2: "/image/2d.webp",
+                            name: "R2D-DOUGH",
+                            description: "Mit blauer und weißer Glasur, silber Spray, rotem Punkt und R2D2 aus weißer Schoki.",
+                            allergene: "Gluten, Soja"
+                        },
+                        {
+                            image_1: "/image/3c.webp",
+                            image_2: "/image/3d.webp",
+                            name: "STORM TROOPER",
+                            description: "Ringdonut in schwarz-pink-weiß-lila Glasur, silbernem Glitzerspray & Sternchen, getoppt mit einem veganen Stormtrooper-Schoko-Helm.",
+                            allergene: "Gluten, Soja"
+                        },
+                        {
+                            image_1: "/image/4c.webp",
+                            image_2: "/image/4d.webp",
+                            name: "GALAXY FAR FAR AWAY",
+                            description: "Ringdonut in schwarz-pink-weiß-lila Glasur, silbernem Glitzerspray & Sternchen, getoppt mit einem veganen Schoki X-Wing und einem Cadburys Schokoflake!",
+                            allergene: "Gluten, Soja, Milch"
+                        },
+                        {
+                            image_1: "/image/5c.webp",
+                            image_2: "/image/5d.webp",
+                            name: "WOOKIE COOKIE",
+                            description: "Ball mit Biscofffüllung, Karamellglasur, getaucht in Biscoff-Oreo-Mix, verziert mit essbarem Zucker-Topper und geschmolzener Milchschoki.",
+                            allergene: "Gluten, Soja, Milch"
+                        },
+                        {
+                            image_1: "/image/6c.webp",
+                            image_2: "/image/6d.webp",
+                            name: "JABBA THE NUT-ELLA",
+                            description: "Mit Nutella gefüllt, grüne Glasur und dunkler Schoko-Print von Jabba the Hutt.",
+                            allergene: "Gluten, Soja, Milch"
+                        }
+
+
+                    ];
+
+                    const productsContainer = document.getElementById("unsere_donuts");
+
+                    function renderProducts(list) {
+                        productsContainer.innerHTML = "";
+                        list.forEach((product) => {
+                            const card = document.createElement("div");
+                            card.className = "m-0 p-3 col-12 col-lg-4 col-xl-6 product-card";
+                            card.innerHTML = `
+
+
+                    <div style="box-shadow: 1px 1px 15px gray;" class="m-0 p-0 row bg-white rounded-5">
+
+                        <div style="cursor: pointer;"
+                            class="m-0 p-0 col-12 col-sm-6 col-md-4 col-lg-12 col-xl-4 product-image row rounded-5 border border-white border-3">
+                            <div class="m-0 p-0 col-12  position-relative" style="overflow:hidden;">
+
+                                <img src="${product.image_1}"
+                                    class="m-0 p-0 carousel-img rounded-5 active w-100 h-100"
+                                    style="object-fit: cover;">
+
+                                <img src="${product.image_2}" class="m-0 p-0 carousel-img rounded-5 w-100 h-100"
+                                    style="object-fit: cover;">
+
+                                <div
+                                    class="m-0 p-3 carousel-dots position-absolute bottom-0 start-50 translate-middle-x d-flex gap-3">
+                                    <span class="dot active" data-index="0"></span>
+                                    <span class="dot" data-index="1"></span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="m-0 p-2 col-12 col-sm-6 col-md-8 col-lg-12 col-xl-8 d-flex flex-column justify-content-between">
+                            <div class="m-0 p-2 fs-5 fw-bold">${product.name}</div>
+                            <div class="m-0 p-2 small">${product.description}</div>
+                            <div class="m-0 p-2 small text-end">
+                                <span class="m-0 p-0 pe-1 fw-bold">🍩 Allergene:</span> 
+                                <span class="m-0 p-0 ">${product.allergene}</span> 
+                        </div>
+
+                    </div>
+
+
+`;
+                            productsContainer.appendChild(card);
+                        });
+                    }
+
+                    // Ініціалізація
+                    renderProducts(products);
+
+                    // Плавна поява елементів при скролі
+                    const fadeEls = document.querySelectorAll('[data-animate="fade-in"]');
+                    const observer = new IntersectionObserver(
+                        (entries) => {
+                            entries.forEach((entry) => {
+                                if (entry.isIntersecting) entry.target.classList.add("visible");
+                            });
+                        },
+                        { threshold: 0.2 }
+                    );
+
+                    fadeEls.forEach((el) => observer.observe(el));
+                    if (window.innerWidth <= 768) {
+                        document
+                            .querySelectorAll("[data-tilt]")
+                            .forEach((el) => el.vanillaTilt && el.vanillaTilt.destroy());
+                    }
+
+                    const faqItems = document.querySelectorAll(".faq-item");
+
+                    faqItems.forEach((item) => {
+                        item.addEventListener("click", () => {
+                            item.classList.toggle("faq-active");
+                            faqItems.forEach((other) => {
+                                if (other !== item) other.classList.remove("faq-active");
+                            });
+                        });
+                    });
+                </script>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- ======== FOOTER ======== -->
+  <!-- ======== FOOTER ======== -->
+  <!-- ======== FOOTER ======== -->
+  <!-- ======== FOOTER ======== -->
+  <!-- ======== FOOTER ======== -->
+  <!-- ======== FOOTER ======== -->
+  <footer
+    class="m-0 p-0 mt-5 pt-5  d-flex justify-content-center text-white rounded-top-piyll border-top border-3 border-white"
+    style="box-shadow: 1px 1px 15px gray; background-color: #ff3399;">
+    <div class="m-0 p-0 container">
+
+      <div class="m-0 p-3 row ">
+        <div class="m-0 p-0 col-12 display-3 text-center fw-bold">DonutLOVE</div>
+      </div>
+
+
+      <div class="m-0 p-0 py-2 row justify-content-center">
+        <a href="/" class="my_link col-12 col-md-auto">ÜBER UNS</a>
+        <a href="/" class="my_link col-12 col-md-auto">DONUTS BOX</a>
+        <a href="/" class="my_link col-12 col-md-auto">LIFERUNG</a>
+        <a href="/" class="my_link col-12 col-md-auto">KONTAKT</a>
+      </div>
+
+
+      <div class="m-0 p-3 row justify-content-center">
+        <div class="my_social col-auto fab fa-facebook-f"></div>
+        <div class="my_social col-auto fab fa-instagram"></div>
+        <div class="my_social col-auto fab fa-tiktok"></div>
+      </div>
+
+
+      <div class="m-0 p-0 pt-5 px-3 row">
+        <div class="m-0 p-0  col-12 border-top border-white"></div>
+      </div>
+
+
+      <div class="m-0 p-0 row justify-content-between">
+
+
+        <div class="m-0 p-0 col-12 col-lg-auto">
+          <div class="m-0 p-2  row justify-content-between justify-content-md-center">
+            <div class="m-0 p-2  col-md-auto text-center small ">Impressum</div>
+            <div class="m-0 p-2  col-md-auto text-center small ">Datenschutz</div>
+            <div class="m-0 p-2  col-md-auto text-center small ">Barrierefreiheitserklärung</div>
+            <div class="m-0 p-2  col-md-auto text-center small">AGB</div>
+          </div>
+        </div>
+
+
+
+        <div class="m-0 p-0 px-3 col-12 d-block d-lg-none">
+          <div class="m-0 p-0 row border-top border-white"></div>
+        </div>
+
+
+
+        <div class="m-0 p-0 col-lg-auto">
+          <div class="m-0 p-2 row">
+            <div class="m-0 p-2 col-lg-auto text-center small">© 2025 DonutLOVE. <span class="m-0 p-1 "></span>Alle
+              Rechte vorbehalten</div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ======== JAVA SCRIPT  ======== -->
+    <!-- ======== JAVA SCRIPT  ======== -->
+    <!-- ======== JAVA SCRIPT  ======== -->
+    <!-- ======== JAVA SCRIPT  ======== -->
+    <!-- ======== JAVA SCRIPT  ======== -->
+    <!-- ======== JAVA SCRIPT  ======== -->
+    <script type="module" src="index.js" defer></script>
+
+
+    <!-- ======== BOOTSTRAP  ======== -->
+    <!-- ======== BOOTSTRAP  ======== -->
+    <!-- ======== BOOTSTRAP  ======== -->
+    <!-- ======== BOOTSTRAP  ======== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <script type="module" src="firebase.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

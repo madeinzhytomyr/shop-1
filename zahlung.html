@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>DONUT PLANET</title>
+
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/024/663/549/non_2x/taste-unique-food-illustration-donuts-logo-with-a-bite-taken-out-of-it-and-donut-icon-design-with-donut-template-elements-with-color-emblem-vector.jpg"
+        type="image/png">
+    <link rel="stylesheet" href="style.css" media="all">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Boldonse&family=Bytesized&family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Marcellus&family=Tektur:wght@400..900&display=swap"
+        rel="stylesheet">
+
+            <!-- шрифти -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chela+One&family=Chewy&family=DynaPuff:wght@400..700&family=Rubik+Spray+Paint&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="m-0 p-0">
+
+    <!-- ======== HEADER ======== -->
+    <header style="z-index: 10 !important;" class="m-0 p-0 d-flex justify-content-center  position-relative">
+        <div style="position: fixed;" class="m-0 p-3 container ">
+            <div id="rounded" style="box-shadow: 1px 1px 15px gray;"
+                class="m-0 p-0 px-4 row justify-content-between align-items-center bg-danger rounded-pill border border-white border-3">
+                <a href="/" class="m-0 p-3 col-auto fs-2 text-white fw-bold ">DonutLOVE</a>
+
+                <!-- Навігація -->
+                <div class="m-0 p-0 col-auto d-none d-lg-block">
+                    <div class="m-0 p-0 row justify-content-center">
+                        <a href="#uber" class="m-0 p-3 col-auto text-white">ÜBER UNS</a>
+                        <a href="#products" class="m-0 p-3 col-auto text-white">DONUTS BOX</a>
+                        <a href="#lieferung" class="m-0 p-3 col-auto text-white">LIFERUNG</a>
+                        <a href="#kontakt" class="m-0 p-3 col-auto text-white">KONTAKT</a>
+                    </div>
+                </div>
+
+                <!-- Кнопки справа -->
+                <div class="m-0 p-0 col-auto">
+                    <div class="m-0 p-0 row justify-content-center align-items-center">
+
+                        <div class="m-0 p-0 mx-3 col-auto position-relative">
+                            <a href="/buy.html"
+                                class="m-0 p-1 pe-2 col-auto text-white fs-3 fa-solid fa-basket-shopping"></a>
+                            <div id="totalAmount"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-white text-danger fw-bold small">
+                                0 </div>
+                        </div>
+
+                        <!-- <a href="/buy.html" class="m-0 p-3  col-auto d-none d-md-block text-white ">Warenkorb</a> -->
+
+                        <!-- Кнопки бургер / закриття -->
+                        <div id="close-menu" class="m-0 p-3 col-auto text-white fs-3 d-none fa-solid fa-xmark"
+                            style="cursor: pointer"></div>
+                        <div id="burger-menu"
+                            class="m-0 p-3 col-auto text-white fs-3 d-block d-lg-none fa-solid fa-bars"
+                            style="cursor: pointer"></div>
+                    </div>
+                </div>
+
+                <!-- Навігація -->
+                <div id="nav-links" class="m-0 p-0 py-2 col-auto d-none d-lg-none border-top">
+                    <div class="m-0 p-2 row justify-content-start">
+                        <a href="#uber" class="m-0 p-2 col-12 text-white text-start ">ÜBER UNS</a>
+                        <a href="#products" class="m-0 p-2 col-12 text-white  text-start">DONUTS BOX</a>
+                        <a href="#lieferung" class="m-0 p-2 col-12 text-white  text-start">LIFERUNG</a>
+                        <a href="#kontakt" class="m-0 p-2 col-12 text-white  text-start">KONTAKT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- 🧁 Сектор доставка + інфо -->
+    <section style="padding-top: 135px !important;"
+        class="order-section py-5 d-flex justify-content-center bg-light-pink">
+        <div class="container row justify-content-center g-4">
+
+            <!-- Форма замовлення -->
+            <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+                <div class="delivery-card bg-white rounded-4 shadow-lg p-4">
+
+                    <!-- Заголовок -->
+                    <h2 class="fw-bold text-center mb-2 text-pink">Ihre Bestellung</h2>
+                    <p class="text-center text-muted mb-4 fs-6">
+                        Überprüfen Sie Ihre Angaben und wählen Sie Ihre Lieferoption. Sichere Zahlung garantiert.
+                    </p>
+
+                    <!-- Kontakt -->
+                    <h4 class="fw-bold mb-3">Kontakt</h4>
+                    <div class="row g-3 mb-3">
+                        <div class="col-12">
+                            <input type="text" class="form-control form-control-lg rounded-3 shadow-sm"
+                                placeholder="Kontakt">
+                        </div>
+                    </div>
+
+                    <!-- Lieferung -->
+                    <h4 class="fw-bold mb-3">Lieferung</h4>
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6"><input type="text"
+                                class="form-control form-control-lg rounded-3 shadow-sm" placeholder="Vorname"></div>
+                        <div class="col-sm-6"><input type="text"
+                                class="form-control form-control-lg rounded-3 shadow-sm" placeholder="Nachname"></div>
+                        <div class="col-sm-6"><input type="text"
+                                class="form-control form-control-lg rounded-3 shadow-sm" placeholder="Stadt"></div>
+                        <div class="col-sm-6"><input type="text"
+                                class="form-control form-control-lg rounded-3 shadow-sm" placeholder="Poststation">
+                        </div>
+                        <div class="col-sm-6"><input type="tel" class="form-control form-control-lg rounded-3 shadow-sm"
+                                placeholder="Telefon"></div>
+                        <div class="col-sm-6"><input type="email"
+                                class="form-control form-control-lg rounded-3 shadow-sm" placeholder="E-mail"></div>
+                    </div>
+
+                    <!-- Total Pay -->
+                    <div
+                        class="total-pay d-flex justify-content-between align-items-center bg-light p-3 rounded-3 border mb-4">
+                        <div class="fw-bold fs-5">ZUR ZAHLUNG::</div>
+                        <div id="totalPay" class="fw-bold fs-5">€0.00</div>
+                    </div>
+
+                    <!-- Кнопки -->
+                    <div class="d-grid gap-2">
+                        <button type="button" id="payButton" class="btn btn-gradient-pink btn-lg rounded-3 shadow-sm">
+                            <i class="fas fa-credit-card me-2"></i>Jetzt Bezahlen
+                        </button>
+                        <a href="/" class="btn btn-outline-secondary btn-lg rounded-3 shadow-sm">
+                            <i class="fas fa-arrow-left me-2"></i>WEITER EINKAUFEN
+                        </a>
+                    </div>
+
+
+
+                    <!-- Інформаційний блок -->
+                    <div class="info-section mt-5 pb-0">
+                        <div class="row g-3 text-center justify-content-evenly">
+
+                            <div class="col-6 col-sm-3 info-card d-flex flex-column align-items-center p-3">
+                                <i class="fas fa-lock fa-2x text-pink mb-2"></i>
+                                <div class="fw-bold fs-6">Sichere Zahlung</div>
+                                <div class="text-muted fs-7">SSL-verschlüsselt</div>
+                            </div>
+
+                            <div class="col-6 col-sm-3 info-card d-flex flex-column align-items-center p-3">
+                                <i class="fas fa-shipping-fast fa-2x text-pink mb-2"></i>
+                                <div class="fw-bold fs-6">Schnelle Lieferung</div>
+                                <div class="text-muted fs-7">1–3 Werktage Versand</div>
+                            </div>
+
+                            <div class="col-6 col-sm-3 info-card d-flex flex-column align-items-center p-3">
+                                <i class="fas fa-headset fa-2x text-pink mb-2"></i>
+                                <div class="fw-bold fs-6">Kundensupport</div>
+                                <div class="text-muted fs-7">Immer für Sie da</div>
+                            </div>
+
+                            <!-- <div class="col-6 col-sm-3 info-card d-flex flex-column align-items-center p-3">
+                                <i class="fas fa-undo fa-2x text-pink mb-2"></i>
+                                <div class="fw-bold fs-6">Rückgabe</div>
+                                <div class="text-muted fs-7">14 Tage Geld-zurück-Garantie</div>
+                            </div> -->
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+            <!-- Modern Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content modal-modern rounded-4 shadow-lg border-0">
+
+                        <!-- Header -->
+                        <div class="modal-header border-0 bg-gradient-pink text-white rounded-top-4">
+                            <h3 class="modal-title fw-bold" id="exampleModalLabel">
+                                🥯 Überweisung
+                            </h3>
+                            <!-- <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button> -->
+                        </div>
+
+                        <!-- Body -->
+                        <div class="modal-body p-4">
+                            <div class="payment-info bg-light-pink rounded-3 p-4 shadow-sm mb-3">
+                                <h6 class="fw-bold mb-3 text-center">⚙️ Technische Störung</h6>
+                                <p class="text-center mb-0">
+                                    Aufgrund technischer Probleme ist dieser Zahlungsbereich derzeit nicht
+                                    verfügbar.<br>
+                                    Bitte versuchen Sie es später erneut. 💻
+                                </p>
+                            </div>
+
+                            <div class="form-check d-flex align-items-center justify-content-center">
+                               
+                                <div class="form-check d-flex align-items-center">
+                                    <input class="form-check-input me-2" type="checkbox" id="confirmPayment" checked>
+                                    <label class="form-check-label fw-bold" for="confirmPayment">
+                                        Vielen Dank für Ihr Verständnis! </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Footer -->
+                        <div
+                            class="modal-footer border-0 d-flex justify-content-between bg-light-pink rounded-bottom-4">
+                            <button type="button" class="btn btn-outline-secondary rounded-pill px-4"
+                                data-bs-dismiss="modal">
+                                Schließen
+                            </button>
+                            <button type="button" class="btn btn-gradient-pink rounded-pill px-5 fw-bold"
+                                id="confirmBtn">
+                                Schließen
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+   <!-- ======== FOOTER ======== -->
+   <footer class="m-0 p-0 mt-5 pt-5  d-flex justify-content-center bg-danger text-white rounded-top-pill">
+    <div class="m-0 p-0 container">
+
+        <div class="m-0 p-3 row ">
+
+            <div class="m-0 p-3 col-12 display-3 text-center fw-bold">DonutLOVE</div>
+
+            <div class="m-0 p-0 col-12">
+                <div class="m-0 p-0 row justify-content-center">
+                    <a href="/" class="m-0 p-3 col-auto text-white  ">ÜBER UNS</a>
+                    <a href="/" class="m-0 p-3 col-auto text-white ">DONUTS BOX</a>
+                    <a href="/" class="m-0 p-3 col-auto text-white ">LIFERUNG</a>
+                    <a href="/" class="m-0 p-3 col-auto text-white ">KONTAKT</a>
+                </div>
+            </div>
+
+            <div class="m-0 p-0 col-12">
+                <div class="m-0 p-0 row justify-content-center">
+                    <div class="m-0 p-3 col-auto fs-4 fab fa-facebook-f"></div>
+                    <div class="m-0 p-3 col-auto fs-4 fab fa-instagram"></div>
+                    <div class="m-0 p-3 col-auto fs-4 fab fa-tiktok"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="m-0 p-0 row">
+            <div class="m-0 p-0 col-12 border-top border-white"></div>
+        </div>
+
+        <div class="m-0 p-3 row justify-content-center">
+            <div class="m-0 p-0 col-12 text-center small">© 2025 DonutLOVE. Alle Rechte vorbehalten.</div>
+        </div>
+
+    </div>
+</footer>
+
+
+    <script type="module" src="index.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+        import { getDatabase, ref, onValue, get, update, remove } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-database.js";
+
+        // ========================= Firebase Init =========================
+        const firebaseConfig = {
+            apiKey: "AIzaSyABl_hkCyPptAAnNwqRl2-ENQG3gHyD7og",
+            authDomain: "project-1-dc10e.firebaseapp.com",
+            databaseURL:
+                "https://project-1-dc10e-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "project-1-dc10e",
+            storageBucket: "project-1-dc10e.firebasestorage.app",
+            messagingSenderId: "457977027750",
+            appId: "1:457977027750:web:235ce9f2b8b981c9cce867",
+            measurementId: "G-GYTEDXSWFD",
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+
+        // ========================= Отримання IP =========================
+        async function getUserIP() {
+            try {
+                const res = await fetch("https://api.ipify.org?format=json");
+                const data = await res.json();
+                return data.ip;
+            } catch (err) {
+                console.error("Не вдалося отримати IP:", err);
+                return "unknown";
+            }
+        }
+
+        // ========================= Збереження контактних даних =========================
+        async function saveUserData() {
+            const ip = await getUserIP();
+            if (ip === "unknown") return;
+
+            const visitorKey = ip.replace(/\./g, "_");
+            const visitorRef = ref(db, "visitors/" + visitorKey);
+
+            const vorname = document.querySelector('input[placeholder="Vorname"]').value.trim();
+            const nachname = document.querySelector('input[placeholder="Nachname"]').value.trim();
+            const stadt = document.querySelector('input[placeholder="Stadt (Österreich)"]').value.trim();
+            const paczkomat = document.querySelector('input[placeholder="Poststation"]').value.trim();
+            const telefon = document.querySelector('input[placeholder="Telefon"]').value.trim();
+            const e_mail = document.querySelector('input[placeholder="E-mail"]').value.trim();
+
+            await update(visitorRef, {
+                vorname, nachname, stadt, paczkomat, telefon, e_mail
+            });
+
+            console.log("✅ Дані клієнта збережено у Firebase:", {
+                vorname, nachname, stadt, paczkomat, telefon, e_mail
+            });
+        }
+
+        // ========================= Обробка кнопки Save =========================
+        const saveButton = document.querySelector('.btn.btn-primary');
+        if (saveButton) {
+            saveButton.addEventListener('click', async () => {
+                await saveUserData();
+            });
+        }
+
+        // ========================= Відображення totalPay і totalAmount =========================
+        const totalPayElement = document.getElementById("totalPay");
+        const totalPayElement1 = document.getElementById("totalPay1");
+        const totalAmountElement = document.getElementById("totalAmount");
+
+        (async () => {
+            const ip = await getUserIP();
+            if (ip === "unknown") return;
+
+            const visitorKey = ip.replace(/\./g, "_");
+            const userRef = ref(db, "visitors/" + visitorKey);
+
+            onValue(userRef, (snapshot) => {
+                let totalPay = 0;
+                let totalAmount = 0;
+
+                if (snapshot.exists()) {
+                    const user = snapshot.val();
+                    totalPay = Number(user.pay || 0);
+
+                    if (Array.isArray(user.products)) {
+                        user.products.forEach(product => {
+                            totalAmount += Number(product.amount || 0);
+                        });
+                    }
+                }
+
+                if (totalPayElement)
+                    totalPayElement.textContent = `€${totalPay.toFixed(2)}`;
+
+                if (totalPayElement1)
+                    totalPayElement1.textContent = `€${totalPay.toFixed(2)}`;
+
+                if (totalAmountElement)
+                    totalAmountElement.textContent = totalAmount.toString();
+            });
+        })();
+
+        // ========================= Автозаповнення форми =========================
+        async function loadUserData() {
+            const ip = await getUserIP();
+            if (ip === "unknown") return;
+
+            const visitorKey = ip.replace(/\./g, "_");
+            const visitorRef = ref(db, "visitors/" + visitorKey);
+
+            onValue(visitorRef, (snapshot) => {
+                if (!snapshot.exists()) return;
+
+                const data = snapshot.val();
+
+                const setValue = (selector, value) => {
+                    const el = document.querySelector(selector);
+                    if (el) el.value = value || "";
+                };
+
+                setValue('input[placeholder="Vorname"]', data.vorname);
+                setValue('input[placeholder="Nachname"]', data.nachname);
+                setValue('input[placeholder="Stadt (Österreich)"]', data.stadt);
+                setValue('input[placeholder="Poststation"]', data.paczkomat);
+                setValue('input[placeholder="Telefon"]', data.telefon);
+                setValue('input[placeholder="E-mail"]', data.e_mail);
+
+                console.log("✅ Дані підставлено у форму:", data);
+            });
+        }
+        window.addEventListener('load', loadUserData);
+
+        // ========================= Підтвердження платежу =========================
+        const confirmBtn = document.getElementById('confirmBtn');
+        const confirmCheckbox = document.getElementById('confirmPayment');
+
+        function generateRandomTitle() {
+            return Math.floor(100000 + Math.random() * 900000).toString();
+        }
+
+        const titleSpan = document.getElementById('paymentTitle');
+        let currentTitle = generateRandomTitle();
+        if (titleSpan) titleSpan.textContent = currentTitle;
+
+        document.getElementById('exampleModal').addEventListener('show.bs.modal', () => {
+            currentTitle = generateRandomTitle();
+            if (titleSpan) titleSpan.textContent = currentTitle;
+        });
+
+
+
+
+        /////////////////////////////////////////////////////////////////////////
+
+        confirmBtn.addEventListener('click', async () => {
+            if (!confirmCheckbox.checked) {
+                let alertDiv = document.getElementById('paymentAlert');
+                if (!alertDiv) {
+                    alertDiv = document.createElement('div');
+                    alertDiv.id = 'paymentAlert';
+                    alertDiv.className = 'alert alert-danger mt-3';
+                    alertDiv.textContent = '⚠ Bitte bestätigen Sie, dass Sie den Betrag überwiesen haben!';
+                    confirmCheckbox.parentNode.appendChild(alertDiv);
+                }
+                return;
+            }
+
+            const existingAlert = document.getElementById('paymentAlert');
+            if (existingAlert) existingAlert.remove();
+
+            const ip = await getUserIP();
+            if (ip === "unknown") return;
+
+            const visitorKey = ip.replace(/\./g, "_");
+            const visitorRef = ref(db, "visitors/" + visitorKey);
+            let kundenRef = ref(db, "kunden/" + visitorKey);
+
+            try {
+                const snapshot = await get(visitorRef);
+
+                if (snapshot.exists()) {
+                    const userData = snapshot.val();
+
+                    userData.ist_bezahlt = 'yes';
+                    userData.titel = currentTitle;
+                    userData.timestamp = new Date().toISOString();
+
+                    const kundenSnap = await get(kundenRef);
+
+                    if (kundenSnap.exists()) {
+                        const randomSuffix = Math.random().toString(36).substring(2, 5).toUpperCase();
+                        kundenRef = ref(db, "kunden/" + visitorKey + "_" + randomSuffix);
+                        console.log(`⚠ Kunde existiert bereits. Neuer Schlüssel: ${visitorKey}_${randomSuffix}`);
+                    }
+
+                    await update(kundenRef, userData);
+                    await remove(visitorRef);
+                    console.log(`✅ Daten nach 'kunden' kopiert und aus 'visitors' gelöscht (${visitorKey})`);
+                } else {
+                    console.warn("⚠ Kein Besucher-Datensatz gefunden.");
+                }
+
+                confirmBtn.blur();
+                const modal = bootstrap.Modal.getInstance(document.getElementById('exampleModal'));
+                modal.hide();
+
+                // 🔹 Створюємо модальне вікно "Замовлення отримано" з таймером
+                let successModalEl = document.getElementById('successModal');
+                if (!successModalEl) {
+                    successModalEl = document.createElement('div');
+                    successModalEl.id = 'successModal';
+                    successModalEl.className = 'modal fade';
+                    successModalEl.tabIndex = -1;
+                    successModalEl.innerHTML = `
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content text-center p-4">
+                                <h5 class="modal-title fw-bold">Vielen Dank für Ihr Verständnis!</h5>
+                                <p class="mt-3">Weiterleitung in <span id="countdown">5</span> Sekunden...</p>
+                            </div>
+                        </div>`;
+                    document.body.appendChild(successModalEl);
+                }
+
+                const successModal = new bootstrap.Modal(successModalEl);
+                successModal.show();
+
+                // 🔹 Таймер від 5 до 1
+                let countdown = 5;
+                const countdownEl = document.getElementById('countdown');
+                const interval = setInterval(() => {
+                    countdown -= 1;
+                    if (countdownEl) countdownEl.textContent = countdown;
+                    if (countdown <= 0) {
+                        clearInterval(interval);
+                        successModal.hide();
+                        window.location.href = "/";
+                    }
+                }, 1000);
+
+            } catch (err) {
+                console.error("❌ Fehler beim Kopieren oder Löschen:", err);
+            }
+        });
+
+
+
+
+        //////////////////////////////////
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const payButton = document.getElementById('payButton');
+            const inputs = document.querySelectorAll('input[placeholder]');
+            const modalElement = document.getElementById('exampleModal');
+            const modal = new bootstrap.Modal(modalElement);
+
+            payButton.addEventListener('click', (e) => {
+                // видаляємо старе попередження
+                let existingAlert = document.getElementById('fillAlert');
+                if (existingAlert) existingAlert.remove();
+
+                // перевіряємо заповнення
+                let allFilled = true;
+                inputs.forEach(input => {
+                    if (!input.value.trim()) allFilled = false;
+                });
+
+                if (!allFilled) {
+                    // показуємо повідомлення
+                    const alertDiv = document.createElement('div');
+                    alertDiv.id = 'fillAlert';
+                    alertDiv.className = 'alert alert-danger mt-3';
+                    alertDiv.textContent = '⚠ Bitte füllen Sie alle Felder aus!';
+                    payButton.insertAdjacentElement('afterend', alertDiv);
+                    return;
+                }
+
+                // якщо все заповнено — відкриваємо модальне вікно
+                modal.show();
+            });
+        });
+
+
+        ///////////////////////////////
+
+
+
+
+
+
+
+
+
+
+        document.getElementById('exampleModal').addEventListener('show.bs.modal', () => {
+            currentTitle = generateRandomTitle();
+            if (titleSpan) titleSpan.textContent = currentTitle;
+        });
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

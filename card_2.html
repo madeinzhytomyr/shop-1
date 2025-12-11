@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <!-- NAZWA -->
+    <!-- NAZWA -->
+    <!-- NAZWA -->
+    <!-- NAZWA -->
+    <!-- NAZWA -->
+    <!-- NAZWA -->
+    <!-- NAZWA -->
+    <!-- NAZWA -->
+    <title>DonutLOVE</title>
+
+
+    <!-- ICONKA -->
+    <!-- ICONKA -->
+    <!-- ICONKA -->
+    <!-- ICONKA -->
+    <!-- ICONKA -->
+    <!-- ICONKA -->
+    <!-- ICONKA -->
+    <link rel="icon" type="image/png"
+        href="https://static.vecteezy.com/system/resources/previews/024/663/549/non_2x/taste-unique-food-illustration-donuts-logo-with-a-bite-taken-out-of-it-and-donut-icon-design-with-donut-template-elements-with-color-emblem-vector.jpg">
+
+    <!-- CSS -->
+    <!-- CSS -->
+    <!-- CSS -->
+    <!-- CSS -->
+    <!-- CSS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" media="all">
+
+
+
+    <!-- шрифти -->
+    <!-- шрифти -->
+    <!-- шрифти -->
+    <!-- шрифти -->
+    <!-- шрифти -->
+    <!-- шрифти -->
+    <!-- шрифти -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Chela+One&family=Chewy&family=DynaPuff:wght@400..700&family=Rubik+Spray+Paint&display=swap">
+
+</head>
+
+<body class="m-0 p-0 bg-body ">
+
+
+    <!-- ======== HEADER ======== -->
+    <header style="z-index: 10 !important;" class="m-0 p-0 d-flex justify-content-center  position-relative">
+        <div style="position: fixed;" class="m-0 p-3 container ">
+            <div id="rounded" style="box-shadow: 1px 1px 15px gray;"
+                class="m-0 p-0 px-4 row justify-content-between align-items-center bg-danger rounded-pill border border-white border-3">
+                <a href="/" class="m-0 p-3 col-auto fs-2 text-white fw-bold ">DonutLOVE</a>
+
+                <!-- Навігація -->
+                <div class="m-0 p-0 col-auto d-none d-lg-block">
+                    <div class="m-0 p-0 row justify-content-center">
+                        <a href="#uber" class="m-0 p-3 col-auto text-white">ÜBER UNS</a>
+                        <a href="#products" class="m-0 p-3 col-auto text-white">DONUTS BOX</a>
+                        <a href="#lieferung" class="m-0 p-3 col-auto text-white">LIFERUNG</a>
+                        <a href="#kontakt" class="m-0 p-3 col-auto text-white">KONTAKT</a>
+                    </div>
+                </div>
+
+                <!-- Кнопки справа -->
+                <div class="m-0 p-0 col-auto">
+                    <div class="m-0 p-0 row justify-content-center align-items-center">
+
+
+                        <!-- кошик -->
+                        <div class="m-0 p-0 col-auto">
+                            <div class="m-0 p-0 row justify-content-center align-items-center">
+                                <div class="m-0 p-0 mx-3 col-auto position-relative">
+                                    <a href="#" id="openCart"
+                                        class="m-0 p-1 pe-2 col-auto text-white fs-3 fa-solid fa-basket-shopping"
+                                        style="cursor: pointer;"></a>
+                                    <div id="totalAmount"
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-white text-danger fw-bold small">
+                                        0</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <a href="/buy.html" class="m-0 p-3  col-auto d-none d-md-block text-white ">Warenkorb</a> -->
+
+                        <!-- Кнопки бургер / закриття -->
+                        <div id="close-menu" class="m-0 p-3 col-auto text-white fs-3 d-none fa-solid fa-xmark"
+                            style="cursor: pointer"></div>
+                        <div id="burger-menu"
+                            class="m-0 p-3 col-auto text-white fs-3 d-block d-lg-none fa-solid fa-bars"
+                            style="cursor: pointer"></div>
+                    </div>
+                </div>
+
+                <!-- Навігація -->
+                <div id="nav-links" class="m-0 p-0 py-2 col-auto d-none d-lg-none border-top">
+                    <div class="m-0 p-2 row justify-content-start">
+                        <a href="#uber" class="m-0 p-2 col-12 text-white text-start ">ÜBER UNS</a>
+                        <a href="#products" class="m-0 p-2 col-12 text-white  text-start">DONUTS BOX</a>
+                        <a href="#lieferung" class="m-0 p-2 col-12 text-white  text-start">LIFERUNG</a>
+                        <a href="#kontakt" class="m-0 p-2 col-12 text-white  text-start">KONTAKT</a>
+                    </div>
+                </div>
+
+                <!-- ======== БІЧНЕ ВІКНО КОШИКА ======== -->
+                <div id="sideCart" class="m-0 p-0 side-cart">
+
+                    <div class="m-0 p-2 side-cart-header bg-danger">
+
+                        <div class="m-0 p-3 fs-4 text-white">Mein Warenkorb</div>
+
+                        <button id="closeCart"
+                            class="m-0 p-3 text-white border-0 bg-transparent fa-solid fa-xmark fs-4 ">
+                        </button>
+                    </div>
+
+                    <div id="cartContent" class="m-0 p-0 px-3 side-cart-content">
+                        <div id="usersContainer" class="m-0 p-0 py-3 col-12  d-flex flex-column gap-3">
+                            <div
+                                class="empty-cart-alert d-flex flex-column align-items-center justify-content-center text-center p-5 rounded-4 shadow-sm text-danger">
+                                <i class="fas fa-shopping-cart fa-4x mb-3 cart-icon"></i>
+                                <strong class="fs-4">Der Warenkorb ist leer.</strong>
+                                <p class="mt-2 mb-0 text-muted fs-5">
+                                    Fügen Sie Produkte hinzu, um Ihren Einkauf zu starten! 🍩
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-0 p-3 side-cart-footer">
+                        <div class="m-0 p-3 px-2 d-flex justify-content-between fw-bold">
+                            <span class="m-0 p-0 fs-5">Gesamt:</span>
+                            <span class="m-0 p-0 fs-5" id="cartTotalPrice">€0.00</span>
+                        </div>
+                        <a href="/zahlung.html" class="m-0 p-2 btn btn-danger w-100 fw-bold rounded-4">
+                            <i class="fa-solid fa-credit-card me-2"></i> Zur Kasse
+                        </a>
+                    </div>
+                </div>
+
+                <div id="cartBackdrop" class="m-0 p-0 cart-backdrop"></div>
+
+
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <!-- загальний стиль */ -->
+    <div style="margin: 0px; margin-top: 120px;" class=" p-3  d-flex justify-content-center">
+        <div class="m-0 p-0 container">
+            <div class="m-0 p-0 row g-5 align-items-center justify-content-center product-card">
+
+
+                <!-- === IMAGE === -->
+                <div class="m-0 p-3 col-12 col-md-6 product-image row border-0">
+                    <div style="cursor: pointer; box-shadow: 1px 1px 15px gray;"
+                        class="m-0 p-0 col-12  position-relative rounded-5 border border-white border-3"
+                        style="overflow:hidden;">
+
+                        <img src="/image/3a.webp" class="m-0 p-0 carousel-img rounded-5 active w-100 h-100"
+                            style="object-fit: cover;">
+
+                        <img src="/image/1b.webp" class="m-0 p-0 carousel-img rounded-5 active w-100 h-100"
+                            style="object-fit: cover;">
+
+                        <img src="/image/1c.webp" class="m-0 p-0 carousel-img rounded-5 active w-100 h-100"
+                            style="object-fit: cover;">
+
+                        <img src="/image/1d.webp" class="m-0 p-0 carousel-img rounded-5 active w-100 h-100"
+                            style="object-fit: cover;">
+
+                        <img src="/image/1e.webp" class="m-0 p-0 carousel-img rounded-5 active w-100 h-100"
+                            style="object-fit: cover;">
+
+                        <div
+                            class="m-0 p-3 carousel-dots position-absolute bottom-0 start-50 translate-middle-x d-flex gap-3">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="1"></span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- === Інформація === -->
+                <div class="m-0 p-0 col-12 col-md-6 text-center ">
+
+                    <div class="m-0 p-3 row justify-content-center">
+
+                        <div class="m-0 p-0 col-auto ">
+                            <div class="m-0 p-2 px-5 fs-1 fw-bold bg-danger text-white rounded-5">
+                                Unsere Donuts</div>
+                        </div>
+
+                        <div class="m-0 p-2 col-12 text-center fs-6 ">Sweet galaxy experience — handmade vegan donuts
+                            that melt in your mouth. Taste the universe. Crafted for dreamers & dessert lovers.</div>
+
+                    </div>
+
+
+
+
+                    <div class="m-0 p-2 rowx justify-content-center align-items-center ">
+
+                        <label class="m-0 p-2 col-auto fw-bold fs-5">Menge:</label>
+                        <button class="m-0 p-1 px-2 col-auto rounded-2 fs-4 bg-danger text-white border-0"
+                            id="minus">−</button>
+                        <input style="width: 48px;" type="text" id="value" value="1" readonly
+                            class="m-0 p-3 col-auto text-center border-0 rounded-4">
+
+                        <button class="m-0 p-1 px-2 col-auto rounded-2 fs-4 bg-danger text-white border-0"
+                            id="plus">+</button>
+
+                    </div>
+
+                    <p class="m-0 p-3 fs-2 fw-semibold text-center">€45.75</p>
+
+
+                    <div class="m-0 p-3">
+
+                        <button id="openCart1" class="m-0 p-2 px-5 text-center rounded-4 bg-danger text-white border-0"
+                            onclick="addUserFromInput('/image/3a.webp','Naschkatze Box','45.75')">
+                            <i class="fa-solid fa-basket-shopping me-2"></i> Add to Cart
+                        </button>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- СУЧАСНИЙ ОПИС -->
+    <div class="m-0 p-3 d-flex justify-content-center">
+        <div class="m-0 p-0 container">
+
+            <div class="m-0 p-2 row justify-content-center">
+                <div class="m-0 p-2 col-auto">
+                    <div class="m-0 p-2 px-5 fs-1 fw-bold bg-danger text-white rounded-5">
+                        Unsere Donuts
+                    </div>
+                </div>
+
+                <div class="m-0 p-2 col-12 text-center fs-6">
+                    Bequem Nach Hause Delivery
+                </div>
+            </div>
+
+            <!-- Тут рендеряться пончики -->
+            <div id="unsere_donuts" class="m-0 p-0 row align-items-center">
+
+                <!-- наші пончики опис через джава скріпт -->
+                <script>
+                    const products = [
+                        {
+                            image_1: "/image/1c.webp",
+                            image_2: "/image/1d.webp",
+                            name: "DARTH BAKER",
+                            description: "Ball mit Himbeerkonfitüre, Schokoglasur, schwarzen & roten Streuseln, rotem Buttercreme-Swirl und Darth-Vader-Schoko.",
+                            allergene: "🍩 Allergene: Gluten, Soja"
+                        },
+                        {
+                            image_1: "/image/2c.webp",
+                            image_2: "/image/2d.webp",
+                            name: "R2D-DOUGH",
+                            description: "Mit blauer und weißer Glasur, silber Spray, rotem Punkt und R2D2 aus weißer Schoki.",
+                            allergene: "🍩 Allergene: Gluten, Soja"
+                        },
+                        {
+                            image_1: "/image/3c.webp",
+                            image_2: "/image/3d.webp",
+                            name: "STORM TROOPER",
+                            description: "Ringdonut in schwarz-pink-weiß-lila Glasur, silbernem Glitzerspray & Sternchen, getoppt mit einem veganen Stormtrooper-Schoko-Helm.",
+                            allergene: "🍩 Allergene: Gluten, Soja"
+                        },
+                        {
+                            image_1: "/image/4c.webp",
+                            image_2: "/image/4d.webp",
+                            name: "GALAXY FAR FAR AWAY",
+                            description: "Ringdonut in schwarz-pink-weiß-lila Glasur, silbernem Glitzerspray & Sternchen, getoppt mit einem veganen Schoki X-Wing und einem Cadburys Schokoflake!",
+                            allergene: "🍩 Allergene: Gluten, Soja, Milch"
+                        },
+                        {
+                            image_1: "/image/5c.webp",
+                            image_2: "/image/5d.webp",
+                            name: "WOOKIE COOKIE",
+                            description: "Ball mit Biscofffüllung, Karamellglasur, getaucht in Biscoff-Oreo-Mix, verziert mit essbarem Zucker-Topper und geschmolzener Milchschoki.",
+                            allergene: "🍩 Allergene: Gluten, Soja, Milch"
+                        },
+                        {
+                            image_1: "/image/6c.webp",
+                            image_2: "/image/6d.webp",
+                            name: "JABBA THE NUT-ELLA",
+                            description: "Mit Nutella gefüllt, grüne Glasur und dunkler Schoko-Print von Jabba the Hutt.",
+                            allergene: "🍩 Allergene: Gluten, Soja, Milch"
+                        }
+
+
+                    ];
+
+                    const productsContainer = document.getElementById("unsere_donuts");
+
+                    function renderProducts(list) {
+                        productsContainer.innerHTML = "";
+                        list.forEach((product) => {
+                            const card = document.createElement("div");
+                            card.className = "m-0 p-3 col-12 col-lg-6 product-card";
+                            card.innerHTML = `
+
+
+                    <div style="box-shadow: 1px 1px 15px gray;" class="m-0 p-0 row bg-white rounded-5">
+
+                        <div style="cursor: pointer;"
+                            class="m-0 p-0 col-12 col-sm-6 col-md-4 col-lg-12 col-xl-4 product-image row rounded-5 border border-white border-3">
+                            <div class="m-0 p-0 col-12  position-relative" style="overflow:hidden;">
+
+                                <img src="${product.image_1}"
+                                    class="m-0 p-0 carousel-img rounded-5 active w-100 h-100"
+                                    style="object-fit: cover;">
+
+                                <img src="${product.image_2}" class="m-0 p-0 carousel-img rounded-5 w-100 h-100"
+                                    style="object-fit: cover;">
+
+                                <div
+                                    class="m-0 p-3 carousel-dots position-absolute bottom-0 start-50 translate-middle-x d-flex gap-3">
+                                    <span class="dot active" data-index="0"></span>
+                                    <span class="dot" data-index="1"></span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="m-0 p-2 col-12 col-sm-6 col-md-8 col-lg-12 col-xl-8 d-flex flex-column justify-content-between">
+                            <div class="m-0 p-2 fs-5 fw-bold">${product.name}</div>
+                            <div class="m-0 p-2 small">${product.description}</div>
+                            <div class="m-0 p-2 small text-end">${product.allergene}</div>
+                        </div>
+
+                    </div>
+
+
+`;
+                            productsContainer.appendChild(card);
+                        });
+                    }
+
+                    // Ініціалізація
+                    renderProducts(products);
+
+                    // Плавна поява елементів при скролі
+                    const fadeEls = document.querySelectorAll('[data-animate="fade-in"]');
+                    const observer = new IntersectionObserver(
+                        (entries) => {
+                            entries.forEach((entry) => {
+                                if (entry.isIntersecting) entry.target.classList.add("visible");
+                            });
+                        },
+                        { threshold: 0.2 }
+                    );
+
+                    fadeEls.forEach((el) => observer.observe(el));
+                    if (window.innerWidth <= 768) {
+                        document
+                            .querySelectorAll("[data-tilt]")
+                            .forEach((el) => el.vanillaTilt && el.vanillaTilt.destroy());
+                    }
+
+                    const faqItems = document.querySelectorAll(".faq-item");
+
+                    faqItems.forEach((item) => {
+                        item.addEventListener("click", () => {
+                            item.classList.toggle("faq-active");
+                            faqItems.forEach((other) => {
+                                if (other !== item) other.classList.remove("faq-active");
+                            });
+                        });
+                    });
+                </script>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- ======== DONUTS ======== -->
+    <section id="products" class="m-0 p-0 py-5 d-flex justify-content-center">
+        <div class="m-0 p-0  container">
+
+            <div class="m-0 p-2 row justify-content-center">
+
+                <div class="m-0 p-2 col-auto ">
+                    <div style="box-shadow: 1px 1px 15px gray;"
+                        class="m-0 p-2 px-5 fs-1 fw-bold bg-danger text-white rounded-5">Donuts Box</div>
+                </div>
+
+                <div class="m-0 p-2 col-12 text-center fs-6 ">Bequem Nach Hause Delivery</div>
+            </div>
+
+            <div id="products_1" class="m-0 p-2 row justify-content-center"> </div>
+
+            <!-- ======== PRODUCT MODAL ======== -->
+            <div id="productModal"
+                class="d-none position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex justify-content-center align-items-center"
+                style="z-index: 9999;">
+                <div class="bg-white rounded-5 p-4 position-relative text-center" style="max-width: 400px; width: 90%;">
+
+                    <div id="modalClose" class="position-absolute top-0 end-0 m-3 fs-3 text-danger"
+                        style="cursor: pointer;">&times;</div>
+
+                    <img id="modalImg" src="" alt="" class="w-100 rounded-4 mb-3">
+
+                    <h5 id="modalName" class="fw-bold text-dark mb-2"></h5>
+                    <p id="modalPrice" class="fs-5 fw-semibold text-danger mb-4"></p>
+
+                    <button id="modalAddToCart"
+                        class="m-0 p-2 px-4 fw-bold fs-6 bg-danger text-white border-0 rounded-4">
+                        In den Warenkorb
+                    </button>
+                </div>
+            </div>
+
+
+
+            <div class="m-0 p-3 row justify-content-center ">
+                <button id="loadMoreBtn"
+                    class="m-0 p-2 px-4 col-auto fw-bold fs-6  bg-danger text-white border-0 rounded-4">
+                    MEHR ANZEIGEN</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- ======== FOOTER ======== -->
+    <footer style="box-shadow: 1px 1px 15px gray;"
+        class="m-0 p-0 mt-5 pt-5  d-flex justify-content-center bg-danger text-white rounded-top-pill">
+        <div class="m-0 p-0 container">
+
+            <div class="m-0 p-3 row ">
+
+                <div class="m-0 p-3 col-12 display-3 text-center fw-bold">DonutLOVE</div>
+
+                <div class="m-0 p-0 col-12">
+                    <div class="m-0 p-0 row justify-content-center">
+                        <a href="/" class="m-0 p-3 col-auto text-white  ">ÜBER UNS</a>
+                        <a href="/" class="m-0 p-3 col-auto text-white ">DONUTS BOX</a>
+                        <a href="/" class="m-0 p-3 col-auto text-white ">LIFERUNG</a>
+                        <a href="/" class="m-0 p-3 col-auto text-white ">KONTAKT</a>
+                    </div>
+                </div>
+
+                <div class="m-0 p-0 col-12">
+                    <div class="m-0 p-0 row justify-content-center">
+                        <div class="m-0 p-3 col-auto fs-4 fab fa-facebook-f"></div>
+                        <div class="m-0 p-3 col-auto fs-4 fab fa-instagram"></div>
+                        <div class="m-0 p-3 col-auto fs-4 fab fa-tiktok"></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="m-0 p-0 row">
+                <div class="m-0 p-0 col-12 border-top border-white"></div>
+            </div>
+
+            <div class="m-0 p-3 row justify-content-center">
+                <div class="m-0 p-0 col-12 text-center small">© 2025 DonutLOVE. Alle Rechte vorbehalten.</div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <!-- ======== модальне вікно для карток ======== -->
+    <!-- ======== модальне вікно для карток ======== -->
+    <!-- ======== модальне вікно для карток ======== -->
+    <!-- ======== модальне вікно для карток ======== -->
+    <!-- ======== модальне вікно для карток ======== -->
+    <div id="unsere_card" class="m-0 p-0"></div>
+
+
+
+
+
+
+
+
+    <!-- ======== JAVA SCRIPT  ======== -->
+    <!-- ======== JAVA SCRIPT  ======== -->
+    <!-- ======== JAVA SCRIPT  ======== -->
+    <!-- ======== JAVA SCRIPT  ======== -->
+    <!-- ======== JAVA SCRIPT  ======== -->
+    <!-- ======== JAVA SCRIPT  ======== -->
+    <!-- ======== JAVA SCRIPT  ======== -->
+    <!-- ======== JAVA SCRIPT  ======== -->
+    <!-- ======== JAVA SCRIPT  ======== -->
+    <script type="module" src="index.js" defer></script>
+
+
+    <!-- ======== BOOTSTRAP  ======== -->
+    <!-- ======== BOOTSTRAP  ======== -->
+    <!-- ======== BOOTSTRAP  ======== -->
+    <!-- ======== BOOTSTRAP  ======== -->
+    <!-- ======== BOOTSTRAP  ======== -->
+    <!-- ======== BOOTSTRAP  ======== -->
+    <!-- ======== BOOTSTRAP  ======== -->
+    <!-- ======== BOOTSTRAP  ======== -->
+    <!-- ======== BOOTSTRAP  ======== -->
+    <!-- ======== BOOTSTRAP  ======== -->
+    <!-- ======== BOOTSTRAP  ======== -->
+    <!-- ======== BOOTSTRAP  ======== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <!-- ======== FIREBASE  ======== -->
+    <script type="module">
+
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+
+
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getDatabase, ref, set, update, get, onValue } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
+
+        // 🔧 Firebase config
+        const firebaseConfig = {
+            apiKey: "AIzaSy...",
+            authDomain: "my-shop.firebaseapp.com",
+            databaseURL: "https://donut-planet-default-rtdb.europe-west1.firebasedatabase.app/",
+            projectId: "my-shop",
+            storageBucket: "my-shop.appspot.com",
+            messagingSenderId: "1234567890",
+            appId: "1:1234567890:web:abcd1234"
+        };
+
+        // 🚀 Ініціалізація Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+
+        // ========================= Отримання IP =========================
+        async function getUserIP() {
+            try {
+                const res = await fetch("https://api.ipify.org?format=json");
+                const data = await res.json();
+                return data.ip;
+            } catch (err) {
+                console.error("Не вдалося отримати IP:", err);
+                return "unknown";
+            }
+        }
+
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+
+        async function addVisitor() {
+            const ip = await getUserIP();
+            if (ip === "unknown") return;
+
+            const visitorKey = ip.replace(/\./g, "_");
+            const visitorRef = ref(db, "visitors/" + visitorKey);
+
+            const snapshot = await get(visitorRef);
+            if (!snapshot.exists()) {
+                await set(visitorRef, {
+                    ip,
+                    timestamp: new Date().toLocaleString("uk-UA"),
+                    userAgent: navigator.userAgent,
+                    page: window.location.pathname,
+                    products: [],
+                    pay: 0,
+
+                    vorname: 0,
+                    nachname: 0,
+                    stadt: 0,
+                    paczkomat: 0,
+                    telefon: 0,
+                    e_mail: 0,
+
+                    titel: 0,
+                    ist_bezahlt: 'no'
+
+                });
+                console.log("✅ Відвідувач доданий:", ip);
+            }
+        }
+
+        window.addEventListener("load", addVisitor);
+
+
+
+
+
+
+
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+        // ========================= Відображення totalPay і totalAmount (тільки для цього IP) =========================
+
+        const totalPayElement = document.getElementById("totalPay");
+        const totalAmountElement = document.getElementById("totalAmount");
+
+        (async () => {
+            const ip = await getUserIP();
+            if (ip === "unknown") return;
+
+            const visitorKey = ip.replace(/\./g, "_");
+            const userRef = ref(db, "visitors/" + visitorKey);
+
+            onValue(userRef, (snapshot) => {
+                let totalPay = 0;
+                let totalAmount = 0;
+
+                if (snapshot.exists()) {
+                    const user = snapshot.val();
+                    totalPay = Number(user.pay || 0);
+
+                    if (Array.isArray(user.products)) {
+                        user.products.forEach(product => {
+                            totalAmount += Number(product.amount || 0);
+                        });
+                    }
+                }
+
+                if (totalPayElement)
+                    totalPayElement.textContent = `€${totalPay.toFixed(2)}`;
+
+                if (totalAmountElement)
+                    totalAmountElement.textContent = totalAmount.toString();
+            });
+        })();
+
+
+
+
+
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+        // ====== JS кошик справа меню ======
+
+
+
+
+        // ====== ПЛЮС/МІНУС/ВИДАЛЕННЯ ======
+        // ====== ПЛЮС/МІНУС/ВИДАЛЕННЯ ======
+        // ====== ПЛЮС/МІНУС/ВИДАЛЕННЯ ======
+        // ====== ПЛЮС/МІНУС/ВИДАЛЕННЯ ======
+        // ====== ПЛЮС/МІНУС/ВИДАЛЕННЯ ======
+        // ====== ПЛЮС/МІНУС/ВИДАЛЕННЯ ======
+        // ====== ПЛЮС/МІНУС/ВИДАЛЕННЯ ======
+        window.PlusAmount = async function (userKey, productIndex) {
+            const userRef = ref(db, "visitors/" + userKey);
+            const snapshot = await get(userRef);
+            if (!snapshot.exists()) return;
+
+            const userData = snapshot.val();
+            const product = userData.products[productIndex];
+            product.amount = (Number(product.amount) || 0) + 1;
+            product.summary = product.amount * Number(product.price || 0);
+            userData.pay = userData.products.reduce((sum, p) => sum + (p.summary || 0), 0);
+            await update(userRef, { products: userData.products, pay: userData.pay });
+        };
+
+        window.MinusAmount = async function (userKey, productIndex) {
+            const userRef = ref(db, "visitors/" + userKey);
+            const snapshot = await get(userRef);
+            if (!snapshot.exists()) return;
+
+            const userData = snapshot.val();
+            const product = userData.products[productIndex];
+            product.amount = Math.max((Number(product.amount) || 1) - 1, 1);
+            product.summary = product.amount * Number(product.price || 0);
+            userData.pay = userData.products.reduce((sum, p) => sum + (p.summary || 0), 0);
+            await update(userRef, { products: userData.products, pay: userData.pay });
+        };
+
+        window.deleteProduct = async function (userKey, productIndex) {
+            const userRef = ref(db, "visitors/" + userKey);
+            const snapshot = await get(userRef);
+            if (!snapshot.exists()) return;
+
+            const userData = snapshot.val();
+            userData.products.splice(productIndex, 1);
+            userData.pay = userData.products.reduce((sum, p) => sum + (p.summary || 0), 0);
+            await update(userRef, { products: userData.products, pay: userData.pay });
+        };
+
+        // ===== КОШИК У РЕАЛЬНОМУ ЧАСІ =====
+        // ===== КОШИК У РЕАЛЬНОМУ ЧАСІ =====
+        // ===== КОШИК У РЕАЛЬНОМУ ЧАСІ =====
+        // ===== КОШИК У РЕАЛЬНОМУ ЧАСІ =====
+        // ===== КОШИК У РЕАЛЬНОМУ ЧАСІ =====
+        // ===== КОШИК У РЕАЛЬНОМУ ЧАСІ =====
+        // ===== КОШИК У РЕАЛЬНОМУ ЧАСІ =====
+        // ===== КОШИК У РЕАЛЬНОМУ ЧАСІ =====
+        // ===== КОШИК У РЕАЛЬНОМУ ЧАСІ =====
+
+        document.addEventListener("DOMContentLoaded", async () => {
+            const sideCart = document.getElementById("sideCart");
+            const cartBackdrop = document.getElementById("cartBackdrop");
+            const cartContent = document.getElementById("cartContent");
+            const cartTotalPrice = document.getElementById("cartTotalPrice");
+            const cartIcon = document.getElementById("openCart");
+            const closeCart = document.getElementById("closeCart");
+
+            // 🧩 Перевірка, щоб не було null
+            if (!cartIcon || !sideCart || !cartBackdrop || !cartContent || !cartTotalPrice) {
+                console.error("❌ Помилка: елементи кошика не знайдені у DOM");
+                return;
+            }
+
+            // Відкрити кошик
+            cartIcon.addEventListener("click", async (e) => {
+                e.preventDefault();
+                sideCart.classList.add("active");
+                cartBackdrop.classList.add("active");
+                await loadCartRealtime();
+            });
+
+            // Закрити кошик
+            closeCart?.addEventListener("click", closeSideCart);
+            cartBackdrop.addEventListener("click", closeSideCart);
+
+            function closeSideCart() {
+                sideCart.classList.remove("active");
+                cartBackdrop.classList.remove("active");
+            }
+
+            async function loadCartRealtime() {
+                const ip = await getUserIP();
+                if (ip === "unknown") return;
+                const visitorKey = ip.replace(/\./g, "_");
+                const userRef = ref(db, "visitors/" + visitorKey);
+
+                onValue(userRef, (snapshot) => {
+                    cartContent.innerHTML = "";
+                    let total = 0;
+
+                    if (!snapshot.exists()) {
+                        cartContent.innerHTML = ` <div id = "usersContainer" class="m-0 p-0 py-3 col-12  d-flex flex-column gap-3" >
+                    <div class="empty-cart-alert d-flex flex-column align-items-center justify-content-center text-center p-5 rounded-4 shadow-sm">
+                        <i class="fas fa-shopping-cart fa-4x mb-3 cart-icon"></i>
+                        <strong class="fs-4">Der Warenkorb ist leer.</strong>
+                        <p class="mt-2 mb-0 text-muted fs-5">
+                            Fügen Sie Produkte hinzu, um Ihren Einkauf zu starten! 🍩
+                        </p>
+                    </div>
+                    </div > `;
+                        cartTotalPrice.textContent = "€0.00";
+                        return;
+                    }
+
+                    const user = snapshot.val();
+                    if (!Array.isArray(user.products) || user.products.length === 0) {
+                        cartContent.innerHTML = `      <div id = "usersContainer" class="m-0 p-0 py-3 col-12  d-flex flex-column gap-3" >
+                    <div class="empty-cart-alert d-flex flex-column align-items-center justify-content-center text-center p-5 rounded-4 shadow-sm">
+                        <i class="fas fa-shopping-cart fa-4x mb-3 cart-icon"></i>
+                        <strong class="fs-4">Der Warenkorb ist leer.</strong>
+                        <p class="mt-2 mb-0 text-muted fs-5">
+                            Fügen Sie Produkte hinzu, um Ihren Einkauf zu starten! 🍩
+                        </p>
+                    </div>
+                    </div >
+                    `;
+                        cartTotalPrice.textContent = "€0.00";
+                        return;
+                    }
+
+                    user.products.forEach((p, index) => {
+                        const div = document.createElement("div");
+                        div.className = "m-0 p-0 py-3 row cart-item";
+                        div.innerHTML = `
+
+                            <img class="m-0 p-0 col-auto " src = "${p.image}" alt = "${p.name}" >
+
+
+                            <div class="m-0 p-0 col">
+
+                                <div class="m-0 p-0 row">
+
+                                    <div class="m-0 p-2 col cart-item-info">
+                                        <strong>${p.name}</strong>
+                                    </div>
+
+                                    <button onclick="deleteProduct('${visitorKey}', ${index})" class="m-0 p-2 col-auto btn btn-sm btn-outline-danger  text-danger border-0 bg-transparent fa-solid fa-xmark fs-5"></button>
+
+                                </div>
+
+                                <div class="m-0 p-0 row align-items-center">
+
+                                    <div class="m-0 p-2 col cart-item-controls">
+                                        <button onclick="MinusAmount('${visitorKey}', ${index})">−</button>
+                                        <input type="number" value="${p.amount}" disabled>
+                                        <button onclick="PlusAmount('${visitorKey}', ${index})">+</button>
+                                    </div>
+
+                                     <div class="m-0 p-2 col-auto cart-item-info text-end">
+                                        <strong class="m-0 p-0 fs-6">€${p.summary.toFixed(2)}</strong>
+                                    </div>
+
+                                                        
+                                </div>
+                            </div>
+
+               
+                            `;
+                        cartContent.appendChild(div);
+                        total += p.amount * p.price;
+                    });
+
+                    cartTotalPrice.textContent = `€${total.toFixed(2)}`;
+                });
+            }
+        });
+
+        function openSideCart() {
+            const sideCart = document.getElementById("sideCart");
+            const cartBackdrop = document.getElementById("cartBackdrop");
+            sideCart.classList.add("active");
+            cartBackdrop.classList.add("active");
+
+            // 🧩 Приховуємо скролбар
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeSideCart() {
+            const sideCart = document.getElementById("sideCart");
+            const cartBackdrop = document.getElementById("cartBackdrop");
+            sideCart.classList.remove("active");
+            cartBackdrop.classList.remove("active");
+
+            // 🔄 Повертаємо скролбар
+            document.body.style.overflow = "";
+        }
+
+        // 🎯 Виклик при кліку
+        document.getElementById("openCart").addEventListener("click", (e) => {
+            e.preventDefault();
+            openSideCart();
+        });
+
+
+        document.getElementById("closeCart").addEventListener("click", closeSideCart);
+        document.getElementById("cartBackdrop").addEventListener("click", closeSideCart);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+        //карта товару
+
+
+
+        // ==========================
+        // Плюс/мінус кнопки картка
+        // Плюс/мінус кнопки картка 
+        // Плюс/мінус кнопки картка 
+        // Плюс/мінус кнопки картка 
+        // Плюс/мінус кнопки картка
+        // Плюс/мінус кнопки картка 
+        // Плюс/мінус кнопки картка 
+        // Плюс/мінус кнопки картка 
+        // Плюс/мінус кнопки картка
+        // Плюс/мінус кнопки картка 
+        // Плюс/мінус кнопки картка 
+        // Плюс/мінус кнопки картка 
+        // Плюс/мінус кнопки картка
+        // Плюс/мінус кнопки картка 
+        // Плюс/мінус кнопки картка 
+
+        // Плюс/мінус кнопки картка 
+        // Плюс/мінус кнопки картка 
+        // Плюс/мінус кнопки картка 
+
+        // ========================= Контроль кількості =========================
+        const minusBtn = document.getElementById("minus");
+        const plusBtn = document.getElementById("plus");
+        const valueInput = document.getElementById("value");
+
+        minusBtn.addEventListener("click", () => {
+            let current = parseInt(valueInput.value);
+            if (current > 1) valueInput.value = current - 1;
+        });
+
+        plusBtn.addEventListener("click", () => {
+            let current = parseInt(valueInput.value);
+            valueInput.value = current + 1;
+        });
+
+
+
+
+
+
+
+
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        // картка добавити в базу товар 
+        window.addUserFromInput = async function (image, name, price) {
+            try {
+                const input = document.getElementById("value");
+                const amount = parseInt(input.value) || 1; // беремо поточну кількість з інпута
+                const numericPrice = parseFloat(price.replace(",", "."));
+
+                const ip = await getUserIP();
+                if (ip === "unknown") return;
+
+                const userKey = ip.replace(/\./g, "_");
+                const userRef = ref(db, "visitors/" + userKey);
+                const snapshot = await get(userRef);
+
+                let products = [];
+                if (snapshot.exists()) {
+                    products = snapshot.val().products || [];
+                }
+
+                const existingIndex = products.findIndex(p => p.image === image);
+
+                if (existingIndex > -1) {
+                    // 🔄 якщо товар вже є — оновлюємо кількість
+                    products[existingIndex].amount = amount;
+                    products[existingIndex].summary = numericPrice * amount;
+                    console.log(`🔁 Товар "${name}" існує — кількість оновлена на ${amount}`);
+                } else {
+                    // ➕ якщо немає — додаємо новий
+                    products.push({
+                        image,
+                        name,
+                        amount: amount,
+                        price: numericPrice,
+                        summary: numericPrice * amount
+                    });
+                    console.log(`🆕 Товар "${name}" додано у products (${amount} шт)`);
+                }
+
+                const totalPay = products.reduce((sum, p) => sum + (p.summary || 0), 0);
+
+                await update(userRef, {
+                    products,
+                    pay: totalPay,
+                    timestamp: new Date().toLocaleString("uk-UA"),
+                });
+
+                console.log(`✅ Firebase оновлено. Загальна сума: ${totalPay.toFixed(2)} грн`);
+
+            } catch (err) {
+                console.error("❌ Firebase error:", err);
+            }
+        };
+
+
+        //відкрити кошик після натискання кнопки добавити в кошик
+        //відкрити кошик після натискання кнопки добавити в кошик
+        //відкрити кошик після натискання кнопки добавити в кошик
+        //відкрити кошик після натискання кнопки добавити в кошик
+        //відкрити кошик після натискання кнопки добавити в кошик
+        //відкрити кошик після натискання кнопки добавити в кошик
+        //відкрити кошик після натискання кнопки добавити в кошик
+        //відкрити кошик після натискання кнопки добавити в кошик
+        //відкрити кошик після натискання кнопки добавити в кошик
+        //відкрити кошик після натискання кнопки добавити в кошик
+        //відкрити кошик після натискання кнопки добавити в кошик
+        //відкрити кошик після натискання кнопки добавити в кошик
+        //відкрити кошик після натискання кнопки добавити в кошик
+        //відкрити кошик після натискання кнопки добавити в кошик
+        //відкрити кошик після натискання кнопки добавити в кошик
+        //відкрити кошик після натискання кнопки добавити в кошик
+
+        // ==== Глобальна функція для завантаження кошика ====
+        async function loadCartRealtime() {
+            const sideCart = document.getElementById("sideCart");
+            const cartContent = document.getElementById("cartContent");
+            const cartTotalPrice = document.getElementById("cartTotalPrice");
+
+            const ip = await getUserIP();
+            if (ip === "unknown") return;
+            const visitorKey = ip.replace(/\./g, "_");
+            const userRef = ref(db, "visitors/" + visitorKey);
+
+            onValue(userRef, (snapshot) => {
+                cartContent.innerHTML = "";
+                let total = 0;
+
+                if (!snapshot.exists()) {
+                    cartContent.innerHTML = `
+                <div id="usersContainer" class="m-0 p-0 py-3 col-12 d-flex flex-column gap-3">
+                    <div class="empty-cart-alert d-flex flex-column align-items-center justify-content-center text-center p-5 rounded-4 shadow-sm">
+                        <i class="fas fa-shopping-cart fa-4x mb-3 cart-icon"></i>
+                        <strong class="fs-4">Der Warenkorb ist leer.</strong>
+                        <p class="mt-2 mb-0 text-muted fs-5">
+                            Fügen Sie Produkte hinzu, um Ihren Einkauf zu starten! 🍩
+                        </p>
+                    </div>
+                </div>
+            `;
+                    cartTotalPrice.textContent = "€0.00";
+                    return;
+                }
+
+                const user = snapshot.val();
+                if (!Array.isArray(user.products) || user.products.length === 0) {
+                    cartContent.innerHTML = `
+                <div id="usersContainer" class="m-0 p-0 py-3 col-12 d-flex flex-column gap-3">
+                    <div class="empty-cart-alert d-flex flex-column align-items-center justify-content-center text-center p-5 rounded-4 shadow-sm">
+                        <i class="fas fa-shopping-cart fa-4x mb-3 cart-icon"></i>
+                        <strong class="fs-4">Der Warenkorb ist leer.</strong>
+                        <p class="mt-2 mb-0 text-muted fs-5">
+                            Fügen Sie Produkte hinzu, um Ihren Einkauf zu starten! 🍩
+                        </p>
+                    </div>
+                </div>
+            `;
+                    cartTotalPrice.textContent = "€0.00";
+                    return;
+                }
+
+                user.products.forEach((p, index) => {
+                    const div = document.createElement("div");
+                    div.className = "m-0 p-0 py-3 row cart-item";
+                    div.innerHTML = `
+                <img class="m-0 p-0 col-auto" src="${p.image}" alt="${p.name}">
+                <div class="m-0 p-0 col">
+                    <div class="m-0 p-0 row">
+                        <div class="m-0 p-2 col cart-item-info"><strong>${p.name}</strong></div>
+                        <button onclick="deleteProduct('${visitorKey}', ${index})" class="m-0 p-2 col-auto btn btn-sm btn-outline-danger text-danger border-0 bg-transparent fa-solid fa-xmark fs-5"></button>
+                    </div>
+                    <div class="m-0 p-0 row align-items-center">
+                        <div class="m-0 p-2 col cart-item-controls">
+                            <button onclick="MinusAmount('${visitorKey}', ${index})">−</button>
+                            <input type="number" value="${p.amount}" disabled>
+                            <button onclick="PlusAmount('${visitorKey}', ${index})">+</button>
+                        </div>
+                        <div class="m-0 p-2 col-auto cart-item-info text-end">
+                            <strong class="m-0 p-0 fs-6">€${p.summary.toFixed(2)}</strong>
+                        </div>
+                    </div>
+                </div>
+            `;
+                    cartContent.appendChild(div);
+                    total += p.amount * p.price;
+                });
+
+                cartTotalPrice.textContent = `€${total.toFixed(2)}`;
+            });
+        }
+
+        // ==== Відкриття кошика через openCart1 ====
+        document.getElementById("openCart1").addEventListener("click", async (e) => {
+            e.preventDefault();
+            openSideCart();
+            await loadCartRealtime(); // тепер завантаження працює
+        });
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

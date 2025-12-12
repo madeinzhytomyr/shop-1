@@ -10,7 +10,9 @@ body {
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
-    font-variation-settings: "wdth" 100;background: linear-gradient(to bottom, #fff0f5, #ffe6f2)
+    font-variation-settings: "wdth" 100;background: linear-gradient(to bottom, #fff0f5, #ffe6f2);
+    font-variation-settings: "wdth" 100;background: linear-gradient(to bottom, #d3d3d3, #ffffff);
+
 }
 
 section {
@@ -43,8 +45,9 @@ a {
     border: 3px solid var(--bs-white);
     border-radius: 30px;
 
-    background-color: #ff3399;;
     box-shadow: 1px 1px 15px gray;
+    background-color: var(--bs-primary);
+
 }
 
 /* посилання в кошику по назві */
@@ -185,14 +188,15 @@ a {
     cursor: pointer;
     border: 3px solid var(--bs-white) !important;
     border-radius: 15px;
-    background-color: #ff3399 !important;
     /* box-shadow: 1px 1px 15px gray; */
+    background-color: var(--bs-primary);
+
 }
 
 .my_button:hover {
-    color: #ff3399 !important;
+    color: var(--bs-primary) !important;
     background-color: white !important;
-    border: 3px solid #ff3399 !important;
+    border: 3px solid var(--bs-primary) !important;
     font-weight: bold !important;
 }
 
@@ -230,13 +234,16 @@ a {
     cursor: pointer;
     background-color: var(--bs-white);
 
-    border: 2px solid #ff3399;
+    border: 2px solid var(--bs-primary);
     border-radius: 24px;
+    color: var(--bs-primary);
+
 }
 
 .my_social:hover {
-    color: #ff3399;
-    background-color: #ff3399;
+    color: var(--bs-white);
+    background-color: var(--bs-primary);
+
 
     border: 2px solid var(--bs-white);
     border-radius: 24px;
@@ -274,9 +281,10 @@ a {
     align-items: center !important;
 
     cursor: pointer;
-    background-color: #ff3399;
+    background-color: var(--bs-primary);
 
-    border: 3px solid #ff3399;
+
+    border: 3px solid var(--bs-primary);
     border-radius: 24px;
 
     transition: transform 0.2s ease;
@@ -596,7 +604,7 @@ a {
 }
 
 .text-pink {
-    color: #ff3399 !important;
+    color: var(--bs-primary) !important;
 }
 
 /* ===== DELIVERY CARD ===== */
@@ -619,7 +627,7 @@ a {
 }
 .delivery-card .form-control:focus {
     box-shadow: 0 0 0 0.2rem rgba(255, 51, 153, 0.25);
-    border-color: #ff3399;
+    border-color: var(--bs-primary);
 }
 
 /* TOTAL PAY */
@@ -638,11 +646,15 @@ a {
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
+    background-color: var(--bs-primary);
+
 }
 .btn-gradient-pink:hover {
     background: linear-gradient(145deg, #ff3399, #e60073);
     transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: var(--bs-primary);
+
 }
 
 /* INFO SECTION */
@@ -766,9 +778,10 @@ a {
 
 a:hover .cart-icon {
     transform: scale(1.1);
-    background-color: #dc3545;
     color: white;
     transition: all 0.25s ease;
+    background-color: var(--bs-primary);
+
 }
 
 a:hover .price-badge {
@@ -880,10 +893,11 @@ a:hover .price-badge {
 
 .cart-item-controls button {
     border: none;
-    background: #dc3545;
     color: white;
     padding: 2px 8px;
     border-radius: 5px;
+    background-color: var(--bs-primary);
+
 }
 
 .cart-item-controls input[type="number"] {
@@ -941,7 +955,8 @@ a:hover .price-badge {
     /* transform: scale(1.0); */
     /* box-shadow: 0 4px 10px rgba(0,0,0,0.3); */
     /* background: var(--bs-warning); */
-    background: red;
+    background-color: var(--bs-primary);
+
 
     /* border: 3px solid white; */
 }

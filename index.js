@@ -345,26 +345,26 @@ function renderProducts(list) {
         card.innerHTML = `
 
           <div  class="p-4 rounded-5  text-center"
-            style="background:white; box-shadow: 0 15px 30px rgba(0,0,0,0.1); color:#ff3399; border:3px solid #ff3399;">
+            style="background:white; box-shadow: 0 15px 30px rgba(0,0,0,0.1); color:var(--bs-primary); border:3px solid var(--bs-primary);">
 
             <div class="icon-cir1cle mb-3 rounded-4 col-auto overflow-hidden">
               <img class="my_img_card m-0 p-0 w-100 rounded-4" src="${product.img}">
             </div>
 
-            <h4 class="fw-bold m-0 pb-2">
+            <h6 class="fw-bold m-0 pb-2">
                     ${product.name}
-          </h4>
+          </h6>
             
             <p class="m-0 small text-secondary pb-2">
               Für jede Feier – Donuts sind das süße Highlight.            </p>
 
               <!-- 💰 Ціна -->
-              <div style="color: #ff3399;" class="m-0 p-0 px-4 col-12 text-center   fw-bold rounded-4  pb-1">
-                <span class="m-0 p-0 fs-3">€${product.price}</span>
+              <div style="color: var(--bs-primary);" class="m-0 p-0 px-4 col-12 text-center   fw-bold rounded-4  pb-1">
+                <span class="m-0 p-0 fs-5">€${product.price}</span>
                 <span class="m-0 p-0 text-muted small fw-bold ps-1 ">/ 12 stück</span>
               </div>
 
-            <a href="${product.link}" class="my_button mt-2 d-inline-block fs-5">
+            <a href="${product.link}" class="my_button mt-2 d-inline-block fs-6">
               In den Corb
             </a>
           </div>

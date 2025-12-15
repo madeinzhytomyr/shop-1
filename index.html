@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +19,7 @@
   <!-- NAZWA -->
   <!-- NAZWA -->
   <!-- NAZWA -->
-  <title>DonutLOVE</title>
+  <title>MADE in Житомир МЕРЧ</title>
 
 
   <!-- ICONKA -->
@@ -31,9 +29,7 @@
   <!-- ICONKA -->
   <!-- ICONKA -->
   <!-- ICONKA -->
-  <link rel="icon"
-    href="https://static.vecteezy.com/system/resources/previews/024/663/549/non_2x/taste-unique-food-illustration-donuts-logo-with-a-bite-taken-out-of-it-and-donut-icon-design-with-donut-template-elements-with-color-emblem-vector.jpg"
-    type="image/png">
+  <link rel="icon" href="logo.jpg" type="image/png">
 
   <!-- CSS -->
   <!-- CSS -->
@@ -73,9 +69,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script type="module" src="index.js" defer></script>
+
 </head>
 
-<body class="m-0 p-0 bg-body ">
+<body class="m-0 p-0 bg-b1ody ">
 
 
   <!-- ======== HEADER ======== -->
@@ -84,121 +84,129 @@
   <!-- ======== HEADER ======== -->
   <!-- ======== HEADER ======== -->
   <!-- ======== HEADER ======== -->
-  <header style="z-index: 10 !important;" class="m-0 p-0 d-flex justify-content-center  position-relative ">
-
-    <div style="position: fixed; box-shadow: 1px 1px 15px gray; "
-      class="m-0 p-0 container-fluid  border-bottom border-white border-3 bg-primary">
-      <div id="rounded" style=" max-width: 1320px;"
-        class="m-0 p-0 py-1 px-3 px-xxl-0  mx-auto row justify-content-between align-items-center   ">
-
-        <a href="/" class="m-0 p-3 col-auto fs-2 text-white fw-bold ">SHOP</a>
-
-        <!-- Навігація -->
-        <div class="m-0 p-0 col-auto d-none d-lg-block">
-          <div class="m-0 p-2 row justify-content-center">
-            <!-- <a href="#uber" class="my_link col-auto ">ÜBER UNS</a> -->
-            <a href="#products" class="my_link col-auto">POPULAR</a>
-            <!-- <a href="#lieferung" class="my_link col-auto">LIFERUNG</a> -->
-            <!-- <a href="#kontakt" class="my_link col-auto">KONTAKT</a> -->
-          </div>
-        </div>
-
-        <!-- Кнопки справа -->
-        <div class="m-0 p-0 col-auto">
-          <div class="m-0 p-0 row justify-content-end align-items-center">
 
 
-            <!-- кошик -->
-            <div class="m-0 p-0 col-auto">
-              <div class="m-0 p-0 row justify-content-center align-items-center">
-                <div class="m-0 p-0 mx-3 col-auto position-relative">
 
-                  <a href="#" id="openCart" class="my_icon me-2 col-auto fa-solid fa-basket-shopping"
-                    style="cursor: pointer;"></a>
+  <header id="header" style=" z-index: 9999 !important;" class="p-0 header d-flex align-items-center fixed-top ">
+    <div style=" max-width:1320px"
+      class=" p-3  container-fluid  position-relative d-flex align-items-center  border-bosttom border-primar2y border- ">
 
-                  <div id="totalAmount"
-                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-white text-danger fw-bold small">
-                    0</div>
+      <a href="/index.html" class="logo d-flex align-items-center me-auto col">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h5 style="letter-spacing: 1px;" class=" sitename ps-2 pe-2 m-0 py-2">MADE in Житомир МЕРЧ</h5>
+      </a>
 
-                </div>
-              </div>
-            </div>
+      <!-- Навігація -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#products">Мерч</a></li>
+          <li><a href="#delivery">Доставка</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#contact">Контакт</a></li>
 
-            <!-- <a href="/buy.html" class="my_link m-0 p-3 ps-0 col-auto d-none d-md-block text-white ">Warenkorb</a> -->
+          <li class="d-none"><a href="#contact">Контакт</a></li>
+        </ul>
+        <!-- <i class="mobile-nav-toggle d-xl-none bi bi-list"></i> -->
+      </nav>
 
-            <!-- Кнопки бургер / закриття -->
-            <div class="m-0 p-0 col-auto">
-              <div class="m-0 p-0 row justify-content-center ">
+      <!-- Кнопки справа -->
+      <div class="m-0 p-0 col-auto">
+        <div class="m-0 p-0 row justify-content-end align-items-center">
 
-                <div id="close-menu" class="my_icon col-auto  d-none fa-solid fa-xmark "></div>
-                <div id="burger-menu" class="my_icon col-auto fs-3 d-flex d-lg-none fa-solid fa-bars">
-                </div>
 
-              </div>
-            </div>
-          </div>
-        </div>
+          <!-- кошик -->
+          <div class="m-0 p-0 col-auto">
+            <div class="m-0 p-0 row justify-content-center align-items-center">
+              <div class="m-0 p-0 mx-3 col-auto position-relative">
 
-        <!-- Навігація -->
-        <div id="nav-links" class="m-0 p-0 py-2 col-auto d-none d-lg-none border-top">
-          <div class="m-0 p-2 row justify-content-start">
-            <a href="#uber" class="my_link col-12 text-start ">ÜBER UNS</a>
-            <a href="#products" class="my_link col-12  text-start ">DONUTS BOX</a>
-            <a href="#lieferung" class="my_link col-12 text-start ">LIFERUNG</a>
-            <a href="#kontakt" class="my_link col-12 text-start  ">KONTAKT</a>
-          </div>
-        </div>
+                <a href="#" id="openCart"
+                  class="my_icon me-2 col-auto fa-solid fa-basket-shopping bg-transparent border-0"
+                  style="cursor: pointer;"></a>
 
-        <!-- ======== БІЧНЕ ВІКНО КОШИКА ======== -->
-        <div id="sideCart" class="m-0 p-0 row side-cart">
-
-          <div style=" border-bottom: 4px solid #ff3399;"
-            class="m-0 p-2 row side-cart-header bg-primary">
-
-            <div class="m-0 p-3 col-auto fs-4 text-white">Mein Warenkorb</div>
-
-            <button id="closeCart" class="my_icon me-2 col-auto fa-solid fa-xmark ">
-            </button>
-
-          </div>
-
-          <div id="cartContent" class="m-0 p-0 px-3  side-cart-content">
-
-            <div id="usersContainer" class="m-0 p-0 py-3 col-12  d-flex flex-column">
-              <div
-                class="empty-cart-alert d-flex flex-column align-items-center justify-content-center text-center p-5 rounded-4 shadow-sm text-danger">
-
-                <i class="fas fa-shopping-cart fa-4x mb-3 cart-icon"></i>
-
-                <strong class="fs-4">Der Warenkorb ist leer.</strong>
-
-                <p class="mt-2 mb-0 text-muted fs-5">
-                  Fügen Sie Produkte hinzu, um Ihren Einkauf zu starten! 🍩
-                </p>
+                <div id="totalAmount"
+                  style="padding-top: 4px; padding-bottom: 5px; height: auto; padding-inline: 7.5px;"
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-white text-primary fw-bold small">
+                  0</div>
 
               </div>
             </div>
           </div>
 
-          <div class="m-0 p-3 row side-cart-footer">
+          <!-- <a href="/buy.html" class="my_link m-0 p-3 ps-0 col-auto d-none d-md-block text-white ">Warenkorb</a> -->
 
-            <div class="m-0 p-3 px-2 d-flex justify-content-between fw-bold">
-              <span class="m-0 p-0 fs-5">Gesamt:</span>
-              <span class="m-0 p-0 fs-5" id="cartTotalPrice">€0.00</span>
+          <!-- Кнопки бургер / закриття -->
+          <div class="m-0 p-0 col-auto">
+            <div class="m-0 p-0 row justify-content-center ">
+
+              <div id="close-menu" class="my_icon col-auto  d-none fa-solid fa-xmark bg-transparent border-0"></div>
+              <div id="burger-menu"
+                class="my_icon col-auto fs-3 d-flex d-lg-none fa-solid fa-bars bg-transparent border-0">
+              </div>
+
             </div>
-
-            <a href="/zahlung.html" class="my_button col-12 ">
-              <i class="m-0 p-0 fa-solid fa-credit-card"></i>
-              <span class="m-0 p-0 ps-2">Zur Kasse</span>
-            </a>
-
           </div>
         </div>
-
-        <div id="cartBackdrop" class="m-0 p-0  wow cart-backdrop"></div>
-
-
       </div>
+
+      <!-- Навігація -->
+      <div id="nav-links" class="m-0 p-0 py-2 col-auto  d-lg-none border-top">
+        <div class="m-0 p-2 row justify-content-start">
+          <a href="#products" class="my_link col-12 text-start ">Мерч</a>
+          <a href="#delivery" class="my_link col-12  text-start ">Доставка</a>
+          <a href="#faq" class="my_link col-12 text-start ">FAQs</a>
+          <a href="#contact" class="my_link col-12 text-start  ">Контакт</a>
+        </div>
+      </div>
+
+      <!-- ======== БІЧНЕ ВІКНО КОШИКА ======== -->
+      <div id="sideCart" style="background-color: #141414" class="m-0 p-0 row side-cart">
+
+        <div style=" border-bottom: 1px solid var(--bs-primary);" class="m-0 p-2 row side-cart-header bg-prim;ary">
+
+          <div class="m-0 p-3 col-auto fs-4 text-white">Кошик</div>
+
+          <button id="closeCart" class="my_icon me-2 col-auto fa-solid fa-xmark bg-transparent border-0 ">
+          </button>
+
+        </div>
+
+        <div id="cartContent" style="background-color: #141414" class="m-0 p-0 px-3  side-cart-content">
+
+          <div id="usersContainer" class="m-0 p-0 py-3 col-12  d-flex flex-column">
+            <div
+              class="empty-cart-alert d-flex flex-column align-items-center justify-content-center text-center p-5 rounded-4 shadow-sm text-danger">
+
+              <i class="fas fa-shopping-cart fa-4x mb-3 cart-icon"></i>
+
+              <strong class="fs-4">Кошик для покупок порожній.</strong>
+
+              <p class="mt-2 mb-0 text-muted fs-5">
+                Додайте товари, щоб почати робити покупки! </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="m-0 p-3 row side-cart-footer">
+
+          <div class="m-0 p-3 px-2 d-flex justify-content-between fw-bold">
+            <span class="m-0 p-0 fs-5">Разом:</span>
+            <span class="m-0 p-0 fs-5" id="cartTotalPrice">€0.00</span>
+          </div>
+
+          <a href="/zahlung.html" class="my_button col-12 py-2 bg-primary text-white ">
+            <i class="m-0 p-0 fa-solid fa-credit-card"></i>
+            <span class="m-0 p-0 ps-2">Зробити замовлення</span>
+          </a>
+
+        </div>
+      </div>
+
+      <div id="cartBackdrop" class="m-0 p-0  wow cart-backdrop"></div>
+
+
+    </div>
     </div>
   </header>
 
@@ -206,1429 +214,310 @@
 
 
 
+  <section style=" height: 80px !important;" class="m-0 p-0  "> </section>
 
 
 
-  <!-- ======== IMAGE ======== -->
-  <!-- ======== IMAGE ======== -->
-  <!-- ======== IMAGE ======== -->
-  <!-- ======== IMAGE ======== -->
-  <!-- ======== IMAGE ======== -->
-  <!-- <section class="hero-section d-flex align-items-center justify-content-center text-center text-white">
-        <video class=" hero-overlay" autoplay muted playsinline loop
-            src="https://nicolaipalmkvist.com/wp-content/uploads/2024/12/1-1.mp4" style="
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
-            object-position: center;
-        ">
-        </video>
-        <div class="hero-overlay"></div>
-        <div class="container position-relative">
-            <h1 class="hero-tit[le mb-3">
-                Willkommen bei <span class="text-gradient">Donut Planet</span>
-            </h1>
-            <p class="hero-subtitle mb-4">
-                Handgemachte Donuts, frisch aus unserer Backstube – so fluffig, dass du sie lieben wirst.
-            </p>
-            <a href="#products" class="btn btn-hero fw-bold rounded-pill px-5 py-3">
-                Jetzt bestellen
-            </a>
 
-            <div class="hero-stats mt-5 ">
-                <div class="stat-box">
-                    <h3>1K+</h3>
-                    <p>Zufriedene Kunden</p>
-                </div>
-                <div class="stat-box">
-                    <h3>3+</h3>
-                    <p>Jahre Erfahrung</p>
-                </div>
-                <div class="stat-box">
-                    <h3>50+</h3>
-                    <p>Donut-Sorten</p>
-                </div>
-                <div class="stat-box">
-                    <h3>100%</h3>
-                    <p>Liebe & Qualität</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
-
-  <section id="uber" class="m-0 p-0 py-5" style=" margin-top: 88px !important;">
-
-
-
-
-    <div class="m-0 p-0 mx-auto  container">
-
-
-
-      <div class="m-0 p-2 row">
-        <div class="m-0 p-2 col-12">
-
-
-
-          <img
-            src="        https://doughnuttime.eu/cdn/shop/files/5_38d59be5-2cd0-4984-ba3c-25f5e9527da1.png?v=1756987630&width=832 "
-            class="m-0 p-0 row  w-100 rounded-5 img-fluid object-fit-cover rounded-5 border border-3 border-white d-flex d-md-none">
-
-
-          <img
-            src="https://doughnuttime.eu/cdn/shop/files/Website_Banners_Desktop_4_2b0f3396-61cc-45b7-8fc0-6f9acab74edd.png?v=1762161845&width=1400"
-            class="m-0 p-0 row  w-100 rounded-5 img-fluid object-fit-cover rounded-5 border border-3 border-white d-none d-md-flex">
-
-
-
-
-        </div>
-
-
-      </div>
-
-    </div>
-  </section>
-
-
-
-
-
-  <!-- <section id="uber" class="m-0 p-0 py-5" style=" margin-top: 88px !important;">
-
-    <div class="container text-center mb-5" data-aos="fade-up">
-      <span class="subtitle" style="color:#ff3399;">Über uns</span>
-      <h2 style="color:#ff3399; font-weight:700;">Warum Sie uns wählen sollten</h2>
-      <p style="max-width:650px; margin:auto;">
-        Wir bringen frische, handgemachte Donuts direkt zu dir – perfekt verpackt in liebevollen Donut-Boxen,
-        hergestellt in Österreich.
-      </p>
-    </div>
-
-
-    <div class="m-0 p-0 mx-auto  container">
-
-  
-
-      <div class="m-0 p-2 row">
-        <div class="m-0 p-2 col-md-6">
-          <video class="m-0 p-0 row  w-100 rounded-5 img-fluid object-fit-cover rounded-5 border border-3 border-white"
-            autoplay muted playsinline loop src="https://nicolaipalmkvist.com/wp-content/uploads/2024/12/1-1.mp4"
-            style="  height: 360px; object-fit: cover; box-shadow: 1px 1px 15px gray;">
-          </video>
-        </div>
-
-        <div class="m-0 p-2 col-md-6">
-          <video class="m-0 p-0 row  w-100 rounded-5 img-fluid object-fit-cover rounded-5 border border-3 border-white "
-            autoplay muted playsinline loop
-            src="https://videos.pexels.com/video-files/7033923/7033923-uhd_2560_1440_25fps.mp4"
-            style="  height: 360px; object-fit: cover; box-shadow: 1px 1px 15px gray;">
-          </video>
-        </div>
-
-        <div class="m-0 p-2 col-md-4">
-          <video class="m-0 p-0 row  w-100 rounded-5 img-fluid object-fit-cover rounded-5 border border-3 border-white"
-            autoplay muted playsinline loop
-            src="https://videos.pexels.com/video-files/7419688/7419688-uhd_2560_1440_25fps.mp4"
-            style="  height: 300px; object-fit: cover; box-shadow: 1px 1px 15px gray;">
-          </video>
-        </div>
-
-        <div class="m-0 p-2 col-md-4">
-          <video class="m-0 p-0 row  w-100 rounded-5 img-fluid object-fit-cover rounded-5 border border-3 border-white"
-            autoplay muted playsinline loop
-            src="https://videos.pexels.com/video-files/7034538/7034538-uhd_2560_1440_25fps.mp4"
-            style="  height: 300px; object-fit: cover; box-shadow: 1px 1px 15px gray;">
-          </video>
-        </div>
-
-        <div class="m-0 p-2 col-md-4">
-          <video class="m-0 p-0 row  w-100 rounded-5 img-fluid object-fit-cover rounded-5 border border-3 border-white"
-            autoplay muted playsinline loop
-            src="https://videos.pexels.com/video-files/6941899/6941899-hd_1920_1080_30fps.mp4"
-            style="  height: 300px; object-fit: cover; box-shadow: 1px 1px 15px gray;">
-          </video>
-        </div>
-
-      </div>
-
-    </div>
-  </section> -->
-
-
-
-
-
-
-
-
-
-  <!-- ======== ÜBER UNS ======== -->
-  <!-- ======== ÜBER UNS ======== -->
-  <!-- ======== ÜBER UNS ======== -->
-  <!-- ======== ÜBER UNS ======== -->
-  <!-- ======== ÜBER UNS ======== -->
-  <!-- <section id="uber" class="m-0 p-0 py-5 d-flex justify-content-center align-items-center">
-        <div class="m-0 p-0 container">
-
-            <div class="m-0 p-2 row justify-content-center">
-                <div class="m-0 p-2 col-auto ">
-                    <h1 class="my_title">Über Uns</h1>
-                </div>
-
-                <div class="m-0 p-2 col-12 text-center small">Bequem Nach Hause Delivery</div>
-            </div>
-
-            <div class="m-0 p-2 row">
-                <div class="m-0 p-2 col-md-6">
-                    <img src="https://img.freepik.com/free-photo/delicious-glazed-doughnut_23-2150673964.jpg?semt=ais_hybrid&w=740&q=80"
-                        class="w-100 rounded-5 img-fluid object-fit-cover rounded-5"
-                        style="height: 250px; object-fit: cover; box-shadow: 1px 1px 15px gray;">
-                </div>
-
-                <div class="m-0 p-2 col-md-6">
-                    <img src="https://images5.alphacoders.com/122/1229655.jpg"
-                        class="w-100 rounded-5 img-fluid object-fit-cover rounded-5"
-                        style="height: 250px; object-fit: cover; box-shadow: 1px 1px 15px gray;">
-                </div>
-
-                <div class="m-0 p-2 col-md-4">
-                    <img src="https://thumbs.dreamstime.com/b/three-irresistible-donuts-vibrant-yellow-plate-closeup-delightful-dessert-image-bakery-confectionery-indulge-your-384826785.jpg"
-                        class="w-100 rounded-5 img-fluid object-fit-cover rounded-5"
-                        style="height: 250px; object-fit: cover; box-shadow: 1px 1px 15px gray;">
-                </div>
-
-                <div class="m-0 p-2 col-md-4">
-                    <img src="https://wallpapercave.com/wp/wp11129765.jpg"
-                        class="w-100 rounded-5 img-fluid object-fit-cover rounded-5"
-                        style="height: 250px; object-fit: cover; box-shadow: 1px 1px 15px gray;">
-                </div>
-
-                <div class="m-0 p-2 col-md-4">
-                    <img src="https://cdn.pixabay.com/photo/2023/04/15/11/58/donuts-7927510_1280.jpg"
-                        class="w-100 rounded-5 img-fluid object-fit-cover rounded-5"
-                        style="height: 250px; object-fit: cover; box-shadow: 1px 1px 15px gray; ">
-                </div>
-
-            </div>
-
-        </div>
-    </section> -->
-
-
-
-  <!-- ======== DONUTS ======== -->
-  <!-- ======== DONUTS ======== -->
-  <!-- ======== DONUTS ======== -->
-  <!-- ======== DONUTS ======== -->
-  <!-- ======== DONUTS ======== -->
-
-  <section id="products" class="m-0 p-0 py-5 d-flex justify-content-center">
-    <div class="m-0 p-0  container">
-
-      <!-- Section Title -->
-      <div class="container text-center " data-aos="fade-up">
-        <span class="   m-0 p-2 px-4 text-white fw-bold rounded-4" style="background-color:var(--bs-primary);">MADE in Zhytomyr</span>
-        <h2 class="m-0 p-0 mt-4 mb-3" style="color:var(--bs-primary); font-weight:700;">ПОПУЛЯРНЕ</h2>
-        <p class="m-0 p-0 mx-auto mt-4  mb-4 text-secondary" style="max-width:720px; ">
-          Entdecke unsere frisch gebackenen Donuts, liebevoll zusammengestellte Boxen und kreative Geschenkideen –
-          alles handgemacht in Österreich.
-        </p>
-      </div>
-
-
-
-
-      <div id="products_1" class="m-0 p-2 row justify-content-center"></div>
-
-
-
-      <div id="loadMoreBtn" class="m-0 p-3 pt-5 row justify-content-center ">
-        <button class="my_button col-auto p-3 px-4 fs-5 ">
-          <i class="m-0 p-0 fa-solid fa-arrow-down"></i>
-          <span class="m-0 p-0 ps-2">Mehr Anzeigen</span>
-        </button>
-      </div>
-
-    </div>
-  </section>
-
-
-
-
-  <!-- ======== LIEFERUNG ======== -->
-  <!-- ======== LIEFERUNG ======== -->
-  <!-- ======== LIEFERUNG ======== -->
-  <!-- ======== LIEFERUNG ======== -->
-  <!-- ======== LIEFERUNG ======== -->
-  <!-- ======== LIEFERUNG ======== -->
-  <!-- <section id="lieferung" class="m-0 p-0 py-5 d-flex justify-content-center">
-    <div class="m-0 p-0 container">
-
-      <div class="m-0 p-2 row justify-content-center">
-
-        <div class="m-0 p-2 col-auto ">
-          <h1 class="my_title">Lieferung</h1>
-        </div>
-
-        <div class="m-0 p-2 col-12 small text-center ">
-          Bequem nach Hause geliefert – dein Lieblingsdonut, frisch und individuell!
-        </div>
-
-      </div>
-
-      <div class="m-0 p-2 row justify-content-center">
-
-        <div class=" m-0 p-2  col-12 col-sm-6  col-md-4 col-xl-3">
-          <div style="box-shadow: 1px 1px 15px gray;"
-            class="m-0 p-2 row justify-content-center border rounded-5 bg-white">
-            <img class="m-0 p-2 col-4 col-sm-6 col-md-6 rounded-circle"
-              src="https://img.freepik.com/free-photo/delicious-glazed-doughnut_23-2150673964.jpg?semt=ais_hybrid&w=740&q=80">
-            <div class="m-0 p-2 col-12 text-center fw-bold fs-5 text-dark">1. Box wählen </div>
-            <div class="m-0 p-2 col-12 text-center fs-6 small text-secondary">
-              Wähle deine Lieblings-Donut-Box aus und lege sie in den Warenkorb.
-            </div>
-          </div>
-        </div>
-
-        <div class=" m-0 p-2  col-12 col-sm-6  col-md-4 col-xl-3">
-          <div style="box-shadow: 1px 1px 15px gray;"
-            class="m-0 p-2 row justify-content-center border rounded-5 bg-white">
-            <img class="m-0 p-2 col-4 col-sm-6 col-md-6 rounded-circle"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcjJlsKvCis62ApZNSqFpDr11YJ-bZ3IQuGw&s">
-            <div class="m-0 p-2 col-12 text-center fw-bold fs-5 text-dark">2. Formular ausfüllen
-            </div>
-            <div class="m-0 p-2 col-12 text-center fs-6 small text-secondary">
-              Gib deine Lieferadresse und Wünsche in unserem Bestellformular ein. </div>
-          </div>
-        </div>
-
-        <div class=" m-0 p-2  col-12 col-sm-6  col-md-4 col-xl-3">
-          <div style="box-shadow: 1px 1px 15px gray;"
-            class="m-0 p-2 row justify-content-center border rounded-5 bg-white">
-            <img class="m-0 p-2 col-4 col-sm-6 col-md-6 rounded-circle"
-              src="https://play-lh.googleusercontent.com/darM7iYzf_iJfmHVtLuijlPKVVgkCjJNbyq8FKP7821iV-P2PSvAGaoJ9qjHtXAGxdA">
-            <div class="m-0 p-2 col-12 text-center fw-bold fs-5 text-dark">3. Bezahlen</div>
-            <div class="m-0 p-2 col-12 text-center fs-6 small text-secondary ">
-              Bezahle sicher und bequem online – schnell & stressfrei. </div>
-          </div>
-        </div>
-
-        <div class=" m-0 p-2  col-12 col-sm-6  col-md-4 col-xl-3">
-          <div style="box-shadow: 1px 1px 15px gray;"
-            class="m-0 p-2 row justify-content-center border rounded-5 bg-white">
-            <img class="m-0 p-2 col-4 col-sm-6 col-md-6 rounded-circle"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6NEvQW8lGjefeULzfGkCJyJNWaDPgqiQwzA&s">
-            <div class="m-0 p-2 col-12 text-center fw-bold fs-5 text-dark">4. Genießen
-            </div>
-            <div class="m-0 p-2 col-12 text-center fs-6 small text-secondary">
-              Erhalte deine frischen Donuts direkt nach Hause und genieße jeden Bissen! </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section> -->
-
-
-
-
-
-  <!-- <section id="hero" class="hero section py-5 px-2" style=" margin-to1p: 120px !important;">
-
-
-
-    <div class="container text-center " data-aos="fade-up">
-      <span class="   m-0 p-2 px-4 text-white fw-bold rounded-4" style="background-color:#ff3399;">DonutLOVE</span>
-      <h2 class="m-0 p-0 mt-4 mb-3" style="color:#ff3399; font-weight:700;">Warum Sie uns wählen sollten</h2>
-      <p class="m-0 p-0 mx-auto mb-4 text-secondary" style="max-width:720px; ">
-        Wir bringen frische, handgemachte Donuts direkt zu dir – perfekt verpackt in liebevollen Donut-Boxen,
-        hergestellt in Österreich.
-      </p>
-    </div>
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="row align-items-center">
-
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <div class="hero-content">
-
-            <h1 class="mb-4 fw-bold" data-aos="fade-up" data-aos-delay="200" style="color:#ff3399; font-size: 42px;">
-              Verwandle jeden Moment in einen süßen Genuss
-            </h1>
-
-            <p class="mb-4" data-aos="fade-up" data-aos-delay="300" style="font-size: 18px; color:#444;">
-              Entdecke unsere frisch zubereiteten Donut-Boxen – perfekt für Geschenke, Feiern oder
-              einfach zum Genießen. Handgemacht in Österreich mit Liebe und besten Zutaten.
-            </p>
-
-            <div class="hero-cta d-flex gap-3 flex-wrap" data-aos="fade-up" data-aos-delay="400">
-
-              <a href="#about" class="px-4 py-2 fw-bold rounded-4" style="background-color:#ff3399; color:white; border: 3px solid white; 
-                            box-shadow:1px 1px 10px gray; text-decoration:none;">
-                Jetzt bestellen
-              </a>
-
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                class="px-4 py-2 fw-bold rounded-4 d-flex align-items-center gap-2 glightbox" style="background-color:white; color:#ff3399; border:3px solid #ff3399; 
-                            text-decoration:none;">
-                <i class="bi bi-bag-heart-fill fs-5"></i>
-                Video ansehen
-              </a>
-            </div>
-
-            <div class="hero-stats d-flex gap-4 flex-wrap mt-5" data-aos="fade-up" data-aos-delay="500">
-
-              <div class="text-center px-3">
-                <div class="stat-number fw-bold" style="font-size:26px; color:#ff3399;">10.000+</div>
-                <div class="stat-label">Verkaufte Donut-Boxen</div>
-              </div>
-
-              <div class="text-center px-3">
-                <div class="stat-number fw-bold" style="font-size:26px; color:#ff3399;">99%</div>
-                <div class="stat-label">Zufriedene Kunden</div>
-              </div>
-
-              <div class="text-center px-3">
-                <div class="stat-number fw-bold" style="font-size:26px; color:#ff3399;">5+</div>
-                <div class="stat-label">Jahre Erfahrung</div>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-6 position-relative" data-aos="fade-left" data-aos-delay="300">
-
-          <div class="hero-image position-relative">
-
-            <img src="https://img.freepik.com/free-photo/glazed-donuts-motion_23-2148506178.jpg"
-              class="img-fluid rounded-5" style="border:4px solid white; box-shadow:1px 1px 20px gray;"
-              alt="Donuts Shop Austria">
-
-            <div class="floating-card position-absolute p-3 rounded-4" data-aos="zoom-in" data-aos-delay="600" style="bottom: -20px; right: -20px; background-color: #ff3399; 
-                            color:white; border:3px solid white; box-shadow:1px 1px 15px gray;
-                            display:flex; align-items:center; gap:15px;">
-
-              <div class="card-icon fs-2">
-                <i class="bi bi-cupcake-fill"></i>
-              </div>
-
-              <div class="card-content">
-                <h5 class="mb-0 fw-bold">Frische Qualität</h5>
-                <div class="growth-percentage">Täglich</div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="container mt-5 pt-4">
-
-
-      <div class="row g-4" data-aos="fade-up">
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="p-4 rounded-4 d-flex gap-3"
-            style="background:white; border:3px solid #ff3399; box-shadow:1px 1px 15px lightgray;">
-
-            <div class="icon-wrapper d-flex align-items-center justify-content-center col-auto "
-              style="width:60px; height:60px; background:#ff3399; color:white; border-radius:15px; width: 75px !important; height: 75px !important;">
-              <i class="bi bi-cake-fill fs-2 px-3"></i>
-            </div>
-
-            <div class="feature-content">
-              <h3 class="fw-bold" style="color:#ff3399;">Handgemachte Qualität</h3>
-              <p>Jeder Donut wird frisch und mit größter Sorgfalt hergestellt – fluffig, aromatisch und immer perfekt
-                glasiert.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="p-4 rounded-4 d-flex gap-3"
-            style="background:white; border:3px solid #ff3399; box-shadow:1px 1px 15px lightgray;">
-
-            <div class="icon-wrapper d-flex align-items-center justify-content-center col-auto "
-              style="width:60px; height:60px; background:#ff3399; color:white; border-radius:15px; width: 75px !important; height: 75px !important;">
-              <i class="bi bi-gift-fill fs-3 px-3"></i>
-            </div>
-
-            <div class="feature-content">
-              <h3 class="fw-bold" style="color:#ff3399;">Perfekte Geschenkideen</h3>
-              <p>Unsere Donut-Boxen sind ideal für besondere Anlässe – stilvoll verpackt und individuell
-                zusammenstellbar.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="p-4 rounded-4 d-flex gap-3"
-            style="background:white; border:3px solid #ff3399; box-shadow:1px 1px 15px lightgray;">
-
-            <div class="icon-wrapper d-flex align-items-center justify-content-center col-auto "
-              style="width:60px; height:60px; background:#ff3399; color:white; border-radius:15px; width: 75px !important; height: 75px !important;">
-              <i class="bi bi-chat-heart-fill fs-3 px-3"></i>
-            </div>
-
-            <div class="feature-content">
-              <h3 class="fw-bold" style="color:#ff3399;">Freundlicher Support</h3>
-              <p>Wir sind jederzeit für Fragen, Wünsche oder individuelle Bestellungen erreichbar – schnell, freundlich
-                und zuverlässig.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="p-4 rounded-4 d-flex gap-3"
-            style="background:white; border:3px solid #ff3399; box-shadow:1px 1px 15px lightgray;">
-
-            <div class="icon-wrapper d-flex align-items-center justify-content-center col-auto "
-              style="width:60px; height:60px; background:#ff3399; color:white; border-radius:15px; width: 75px !important; height: 75px !important;">
-              <i class="bi bi-truck fs-3 px-3"></i>
-            </div>
-
-            <div class="feature-content">
-              <h3 class="fw-bold" style="color:#ff3399;">Schnelle Lieferung</h3>
-              <p>Wir liefern österreichweit – frisch, sicher verpackt und pünktlich direkt zu Ihrer Adresse.</p>
-            </div>
-
-          </div>
-        </div>
-
-
-
-      </div>
-
-    </div>
-
-  </section> -->
-
-
-  <!-- <section id="dia1" class="py-5" style="background-0000color: #fff0f6;">
-
-    <div class="container">
-
-      <div class="cta-modern" data-aos="fade-up" data-aos-delay="400" style="
-      background:#ffffff;
-      padding:60px 30px;
-      border-radius:40px;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      flex-wrap:wrap;
-      gap:30px;
-      position:relative;
-  ">
-
-        <div style="flex:1; min-width:250px; text-align:center;">
-          <img
-            src="https://img.freepik.com/free-photo/glazed-donuts-motion_23-2148506178.jpg?t=st=1763564115~exp=1763567715~hmac=fefdd224e1e5327ce113e506778d8301f08473d22ac0680a8c33c1bb73029a09&w=1480"
-            alt="Donuts" style="max-width:220px; border-radius:50%; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
-        </div>
-
-        <div style="flex:2; min-width:280px; text-align:left;">
-          <h3 style="font-size:32px; font-weight:700; color:#ff3399; margin-bottom:15px;">
-            Süße Momente warten auf dich!
-          </h3>
-          <p style="font-size:18px; line-height:1.6; color:#333; margin-bottom:25px;">
-            Entdecke unsere frischen Donut-Boxen – liebevoll zusammengestellt, perfekt für Geschenke, Feiern oder
-            einfach
-            zum Genießen.
-            Handgemacht in Österreich mit Liebe und den besten Zutaten.
-          </p>
-          <div style="display:flex; gap:15px; flex-wrap:wrap;">
-            <a href="#contact" style="
-          background:#ff3399;
-          color:white;
-          padding:14px 30px;
-          border-radius:30px;
-          font-weight:700;
-          text-decoration:none;
-          box-shadow: 0 5px 15px rgba(255,51,153,0.4);
-          transition:all 0.3s;
-        " onmouseover="this.style.transform='scale(1.05)'; this.style.background='#ff66b3';"
-              onmouseout="this.style.transform='scale(1)'; this.style.background='#ff3399';">
-              Jetzt bestellen <i class="bi bi-arrow-right"></i>
-            </a>
-            <a href="#portfolio" style="
-          background:transparent;
-          color:#ff3399;
-          border:2px solid #ff3399;
-          padding:14px 30px;
-          border-radius:30px;
-          font-weight:700;
-          text-decoration:none;
-          transition:all 0.3s;
-        " onmouseover="this.style.background='#ff3399'; this.style.color='white';"
-              onmouseout="this.style.background='transparent'; this.style.color='#ff3399';">
-              Alle Donuts ansehen
-            </a>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section> -->
-
-
-
-  <section id="about" class="about section py-5 px-2 d-none" style="backgrou0nd-color: #fff0f6;">
-
-    <div class="container text-center mb-5" data-aos="fade-up">
-      <span class="subtitle " style="color:var(--bs-primary);">Über uns</span>
-      <h2 style="color:var(--bs-primary); font-weight:700;">Warum Sie uns wählen sollten</h2>
-      <p style="max-width:650px; margin:auto;">
-        Wir bringen frische, handgemachte Donuts direkt zu dir – perfekt verpackt in liebevollen Donut-Boxen,
-        hergestellt in Österreich.
-      </p>
-    </div>
-
-
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="row align-items-center">
-
-        <div class="col-lg-6 mb-5 mb-lg-0 " data-aos="fade-right" data-aos-delay="200">
-          <div class="content ">
-
-            <h2 style="color:var(--bs-primary); font-weight:600;">
-              Mit Liebe gebacken – für jeden besonderen Moment
-            </h2>
-
-            <p class="lead">
-              Unsere Donuts werden täglich frisch zubereitet und mit kreativen Toppings verfeinert.
-              Ideal für Geschenke, Feiern oder einfach zum Genießen.
-            </p>
-
-            <p>Wir verwenden hochwertige Zutaten, regionale Produkte und entwickeln ständig neue
-              Geschmacksrichtungen, um Donut-Liebhaber immer wieder zu überraschen.</p>
-
-            <p>Ob klassische Glasuren oder ausgefallene Kreationen – unsere Boxen sind so gestaltet,
-              dass sie Freude bereiten und jeden Anlass versüßen.</p>
-
-            <div class="stats-row d-flex gap-4 flex-wrap mt-4">
-
-              <div class="stat-item text-center p-3 rounded-4"
-                style="background:white; border:3px solid #ff3399; box-shadow:1px 1px 10px lightgray;">
-                <div class="stat-number purecounter fw-bold" data-purecounter-start="0" data-purecounter-end="5"
-                  data-purecounter-duration="0" style="font-size:28px; color:#ff3399;">5</div>
-                <div class="stat-label">Jahre Erfahrung</div>
-              </div>
-
-              <div class="stat-item text-center p-3 rounded-4"
-                style="background:white; border:3px solid #ff3399; box-shadow:1px 1px 10px lightgray;">
-                <div class="stat-number purecounter fw-bold" data-purecounter-start="0" data-purecounter-end="12000"
-                  data-purecounter-duration="0" style="font-size:28px; color:#ff3399;">12000</div>
-                <div class="stat-label">Verkaufte Donuts</div>
-              </div>
-
-              <div class="stat-item text-center p-3 rounded-4"
-                style="background:white; border:3px solid #ff3399; box-shadow:1px 1px 10px lightgray;">
-                <div class="stat-number purecounter fw-bold" data-purecounter-start="0" data-purecounter-end="3500"
-                  data-purecounter-duration="0" style="font-size:28px; color:#ff3399;">3500</div>
-                <div class="stat-label">Glückliche Kunden</div>
-              </div>
-
-            </div>
-
-            <!-- <div class="mt-4">
-              <a href="#team" class="px-4 py-2 fw-bold rounded-4"
-                style="background-color:white; color:#ff3399; border:3px solid #ff3399; text-decoration:none;">
-                Lerne unser Team kennen
-              </a>
-            </div> -->
-
-            <!-- CTA BUTTONS -->
-            <div class="hero-cta d-flex gap-3 flex-wrap mt-4" data-aos="fade-up" data-aos-delay="400">
-
-              <!-- Primary pink button -->
-              <a href="#about" class="px-4 py-2 fw-bold rounded-4" style="background-color:#ff3399; color:white; border: 3px solid white; 
-                                  box-shadow:1px 1px 10px gray; text-decoration:none;">
-                Jetzt bestellen
-              </a>
-
-              <!-- Secondary white-pink button -->
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                class="px-4 py-2 fw-bold rounded-4 d-flex align-items-center gap-2 glightbox" style="background-color:white; color:#ff3399; border:3px solid #ff3399; 
-                                  text-decoration:none;">
-                <i class="bi bi-bag-heart-fill fs-5"></i>
-                Video ansehen
-              </a>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-6 position-relative" data-aos="fade-left" data-aos-delay="300">
-
-          <div class="image-wrapper position-relative">
-
-            <img src="https://img.freepik.com/free-photo/delicious-glazed-doughnuts-arrangement_23-2150673976.jpg"
-              class="img-fluid rounded-5" style="border:4px solid white; box-shadow:1px 1px 20px gray;" alt="About us">
-
-            <div class="floating-card position-absolute p-3 rounded-4" data-aos="zoom-in" data-aos-delay="500" style="bottom: -20px; right: -20px; background-color:var(--bs-primary);
-                            color:white; border:3px solid white; box-shadow:1px 1px 15px gray;">
-
-              <div class="d-flex align-items-center gap-3">
-                <div class="icon fs-2"><i class="bi bi-cupcake-fill"></i></div>
-                <div class="text">
-                  <h4 class="mb-1 fw-bold">Ausgezeichnete Qualität</h4>
-                  <p class="m-0" style="font-size:14px;">Frisch, kreativ und in Österreich handgemacht</p>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="container mt-5 pt-4">
-
-
-      <div class="row g-4 " data-aos="fade-up">
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="p-4 rounded-4 d-flex gap-3"
-            style="background:white; border:3px solid var(--bs-primary); box-shadow:1px 1px 15px lightgray;">
-
-            <div class="icon-wrapper d-flex align-items-center justify-content-center col-auto "
-              style="width:60px; height:60px; background:var(--bs-primary); color:white; border-radius:15px; width: 75px !important; height: 75px !important;">
-              <i class="bi bi-cake-fill fs-2 px-3"></i>
-            </div>
-
-            <div class="feature-content">
-              <h3 class="fw-bold" style="color:var(--bs-primary);">Handgemachte Qualität</h3>
-              <p class="m-0">Jeder Donut wird frisch und mit größter Sorgfalt hergestellt – fluffig, aromatisch und immer perfekt
-                glasiert.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="p-4 rounded-4 d-flex gap-3"
-            style="background:white; border:3px solid var(--bs-primary); box-shadow:1px 1px 15px lightgray;">
-
-            <div class="icon-wrapper d-flex align-items-center justify-content-center col-auto "
-              style="width:60px; height:60px; background:var(--bs-primary); color:white; border-radius:15px; width: 75px !important; height: 75px !important;">
-              <i class="bi bi-gift-fill fs-3 px-3"></i>
-            </div>
-
-            <div class="feature-content">
-              <h3 class="fw-bold" style="color:var(--bs-primary);">Perfekte Geschenkideen</h3>
-              <p class="m-0">Unsere Donut-Boxen sind ideal für besondere Anlässe – stilvoll verpackt und individuell
-                zusammenstellbar.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="p-4 rounded-4 d-flex gap-3"
-            style="background:white; border:3px solid var(--bs-primary); box-shadow:1px 1px 15px lightgray;">
-
-            <div class="icon-wrapper d-flex align-items-center justify-content-center col-auto "
-              style="width:60px; height:60px; background:var(--bs-primary); color:white; border-radius:15px; width: 75px !important; height: 75px !important;">
-              <i class="bi bi-chat-heart-fill fs-3 px-3"></i>
-            </div>
-
-            <div class="feature-content">
-              <h3 class="fw-bold" style="color:var(--bs-primary);">Freundlicher Support</h3>
-              <p class="m-0">Wir sind jederzeit für Fragen, Wünsche oder individuelle Bestellungen erreichbar – schnell, freundlich
-                und zuverlässig.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="p-4 rounded-4 d-flex gap-3"
-            style="background:white; border:3px solid var(--bs-primary); box-shadow:1px 1px 15px lightgray;">
-
-            <div class="icon-wrapper d-flex align-items-center justify-content-center col-auto "
-              style="width:60px; height:60px; background:var(--bs-primary); color:white; border-radius:15px; width: 75px !important; height: 75px !important;">
-              <i class="bi bi-truck fs-3 px-3"></i>
-            </div>
-
-            <div class="feature-content">
-              <h3 class="fw-bold" style="color:var(--bs-primary);">Schnelle Lieferung</h3>
-              <p class="m-0">Wir liefern österreichweit – frisch, sicher verpackt und pünktlich direkt zu Ihrer Adresse.</p>
-            </div>
-
-          </div>
-        </div>
-
-
-
-      </div>
-
-    </div>
-
-
-
-    
-    <div class="container mt-5 px-4">
-
-      <div class="portfolio-conclusion row align-items-center" data-aos="fade-up" data-aos-delay="400" style="
-      background:var(--bs-primary);
-      padding:40px;
-      border-radius:25px;
-      border:4px solid white;
-      box-shadow:1px 1px 25px rgba(0,0,0,0.2);
-      text-align:center;
-      color:white;
-   ">
-
-        <div class="conclusion-content col-12 col-lg text-start ">
-
-          <h4 style="font-size:32px; font-weight:700; margin-bottom:15px; color:white;">
-            Bereit für süße Momente?
-          </h4>
-
-          <p class="m-0 mb-4 mb-md-0" style="font-size:18px; max-width:700px; margitn:auto; color:white; ">
-            Kontaktieren Sie uns und bestellen Sie Ihre individuelle Donut-Box – perfekt für jeden Anlass.
-          </p>
-
-        
-        </div>
-
-        <div class="conclusion-actions col-12 col-lg-auto  p-0"
-          style="margirn-top:25px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
-
-          <a href="#contact" style="
-     background:white;
-     color:var(--bs-primary);
-     padding:14px 28px;
-     border-radius:15px;
-     font-weight:600;
-     border:3px solid white;
-     box-shadow:1px 1px 10px rgba(255,255,255,0.4);
-     transition:0.3s;
-     text-decoration:none;
-   " onmouseover="this.style.background='#ffe6f4';" onmouseout="this.style.background='white';">
-            Jetzt bestellen
-            <i class="bi bi-arrow-right"></i>
-          </a>
-
-          <a href="#portfolio" style="
-     background:transparent;
-     color:white;
-     padding:14px 28px;
-     border-radius:15px;
-     border:3px solid white;
-     font-weight:600;
-     transition:0.3s;
-     text-decoration:none;
-   " onmouseover="this.style.background='white'; this.style.color='#ff3399';"
-            onmouseout="this.style.background='transparent'; this.style.color='white';">
-            Alle Donuts ansehen
-          </a>
-
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- <section id="dia" class="pb-5">
-
-    <div class="container">
-
-      <div class="portfolio-conclusion" data-aos="fade-up" data-aos-delay="400" style="
-      background:#ff3399;
-      padding:40px;
-      border-radius:25px;
-      border:4px solid white;
-      box-shadow:1px 1px 25px rgba(0,0,0,0.2);
-      text-align:center;
-      color:white;
-   ">
-
-        <div class="conclusion-content">
-
-          <h4 style="font-size:32px; font-weight:700; margin-bottom:15px; color:white;">
-            Bereit für süße Momente?
-          </h4>
-
-          <p style="font-size:18px; max-width:700px; margin:auto; color:white;">
-            Kontaktieren Sie uns und bestellen Sie Ihre individuelle Donut-Box – perfekt für jeden Anlass.
-          </p>
-
-          <div class="conclusion-actions"
-            style="margin-top:25px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
-
-            <a href="#contact" style="
-         background:white;
-         color:#ff3399;
-         padding:14px 28px;
-         border-radius:15px;
-         font-weight:600;
-         border:3px solid white;
-         box-shadow:1px 1px 10px rgba(255,255,255,0.4);
-         transition:0.3s;
-         text-decoration:none;
-       " onmouseover="this.style.background='#ffe6f4';" onmouseout="this.style.background='white';">
-              Jetzt bestellen
-              <i class="bi bi-arrow-right"></i>
-            </a>
-
-            <a href="#portfolio" style="
-         background:transparent;
-         color:white;
-         padding:14px 28px;
-         border-radius:15px;
-         border:3px solid white;
-         font-weight:600;
-         transition:0.3s;
-         text-decoration:none;
-       " onmouseover="this.style.background='white'; this.style.color='#ff3399';"
-              onmouseout="this.style.background='transparent'; this.style.color='white';">
-              Alle Donuts ansehen
-            </a>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </section> -->
-
-
-
-  <!-- <section id="why-us" class="py-5 px-2" style="backgr0ound-color: #fff0f6;">
-
-    <div class="container text-center mb-5" data-aos="fade-up">
-      <span class="subtitle" style="color:#ff3399;">Unsere Angebote</span>
-      <h2 style="color:#ff3399; font-weight:700;">Was wir anbieten</h2>
-      <p style="max-width:650px; margin:auto;">
-        Frische Donuts, kreative Geschenkboxen und süße Highlights – alles handgemacht
-        in Österreich für jeden Anlass.
-      </p>
-    </div>
-
-
-    <div class="container">
-
-
-      <div class="row g-4" data-aos="fade-up">
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="p-4 rounded-4 d-flex gap-3"
-            style="background:white; border:3px solid #ff3399; box-shadow:1px 1px 15px lightgray;">
-
-            <div class="icon-wrapper d-flex align-items-center justify-content-center col-auto "
-              style="width:60px; height:60px; background:#ff3399; color:white; border-radius:15px; width: 75px !important; height: 75px !important;">
-              <i class="bi bi-cake-fill fs-2 px-3"></i>
-            </div>
-
-            <div class="feature-content">
-              <h3 class="fw-bold" style="color:#ff3399;">Handgemachte Qualität</h3>
-              <p>Jeder Donut wird frisch und mit größter Sorgfalt hergestellt – fluffig, aromatisch und immer perfekt
-                glasiert.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="p-4 rounded-4 d-flex gap-3"
-            style="background:white; border:3px solid #ff3399; box-shadow:1px 1px 15px lightgray;">
-
-            <div class="icon-wrapper d-flex align-items-center justify-content-center col-auto "
-              style="width:60px; height:60px; background:#ff3399; color:white; border-radius:15px; width: 75px !important; height: 75px !important;">
-              <i class="bi bi-gift-fill fs-3 px-3"></i>
-            </div>
-
-            <div class="feature-content">
-              <h3 class="fw-bold" style="color:#ff3399;">Perfekte Geschenkideen</h3>
-              <p>Unsere Donut-Boxen sind ideal für besondere Anlässe – stilvoll verpackt und individuell
-                zusammenstellbar.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="p-4 rounded-4 d-flex gap-3"
-            style="background:white; border:3px solid #ff3399; box-shadow:1px 1px 15px lightgray;">
-
-            <div class="icon-wrapper d-flex align-items-center justify-content-center col-auto "
-              style="width:60px; height:60px; background:#ff3399; color:white; border-radius:15px; width: 75px !important; height: 75px !important;">
-              <i class="bi bi-chat-heart-fill fs-3 px-3"></i>
-            </div>
-
-            <div class="feature-content">
-              <h3 class="fw-bold" style="color:#ff3399;">Freundlicher Support</h3>
-              <p>Wir sind jederzeit für Fragen, Wünsche oder individuelle Bestellungen erreichbar – schnell, freundlich
-                und zuverlässig.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="p-4 rounded-4 d-flex gap-3"
-            style="background:white; border:3px solid #ff3399; box-shadow:1px 1px 15px lightgray;">
-
-            <div class="icon-wrapper d-flex align-items-center justify-content-center col-auto "
-              style="width:60px; height:60px; background:#ff3399; color:white; border-radius:15px; width: 75px !important; height: 75px !important;">
-              <i class="bi bi-truck fs-3 px-3"></i>
-            </div>
-
-            <div class="feature-content">
-              <h3 class="fw-bold" style="color:#ff3399;">Schnelle Lieferung</h3>
-              <p>Wir liefern österreichweit – frisch, sicher verpackt und pünktlich direkt zu Ihrer Adresse.</p>
-            </div>
-
-          </div>
-        </div>
-
-
-
-      </div>
-
-    </div>
-
-  </section> -->
-
-
-
-
-  <!-- <section id="services" class="services section py-5 d-flex justify-content-center">
-    <div class="container">
-
-      <div class="container text-center mb-5" data-aos="fade-up">
-        <span class="subtitle" style="color:#ff3399;">Unsere Angebote</span>
-        <h2 style="color:#ff3399; font-weight:700;">Was wir anbieten</h2>
-        <p style="max-width:650px; margin:auto;">
-          Frische Donuts, kreative Geschenkboxen und süße Highlights – alles handgemacht
-          in Österreich für jeden Anlass.
-        </p>
-      </div>
-
-      <div class="row gy-4 justify-content-center">
-
-        <div class="col-lg-4 col-md-6 col-xxl-3">
-          <div class="p-4 rounded-5  text-center"
-            style="background:white; box-shadow: 0 15px 30px rgba(0,0,0,0.1); color:#ff3399; border:3px solid #ff3399;">
-
-            <div  class="icon-circle mb-3 rounded-4">
-              <i class="bi bi-emoji-smile"></i>
-            </div>
-
-            <h3 class="fw-bold">Frische Donuts</h3>
-            <p class="small">
-              Jeden Tag frisch gebacken – weich, fluffig und mit leckeren Glasuren und Toppings verfeinert.
-            </p>
-
-          
-
-            <a href="service-details.html" class="my_button mt-2 d-inline-block">
-              Mehr erfahren
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-xxl-3">
-          <div class="p-4 rounded-5  text-center"
-            style="background:white; box-shadow: 0 15px 30px rgba(0,0,0,0.1); color:#ff3399; border:3px solid #ff3399;">
-
-            <div class="icon-circle mb-3 rounded-4">
-              <i class="bi bi-gift-fill"></i>
-            </div>
-
-            <h3 class="fw-bold">Donut-Boxen</h3>
-            <p class="small">
-              Liebevoll verpackte Boxen mit einer Auswahl unserer besten Donuts – perfekt als Geschenk.
-            </p>
-
-            <a href="service-details.html" class="my_button mt-2 d-inline-block">
-              Mehr erfahren
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-xxl-3">
-          <div class="p-4 rounded-5  text-center"
-            style="background:white; box-shadow: 0 15px 30px rgba(0,0,0,0.1); color:#ff3399; border:3px solid #ff3399;">
-
-            <div class="icon-circle mb-3 rounded-4">
-              <i class="bi bi-heart-fill"></i>
-            </div>
-
-            <h3 class="fw-bold">Personalisierte Aufträge</h3>
-            <p class="small">
-              Firmenlogo-Donuts, Themenboxen und individuelle Designs – perfekt für besondere Anlässe.
-            </p>
-
-            <a href="service-details.html" class="my_button mt-2 d-inline-block">
-              Mehr erfahren
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-xxl-3">
-          <div class="p-4 rounded-5  text-center"
-            style="background:white; box-shadow: 0 15px 30px rgba(0,0,0,0.1); color:#ff3399; border:3px solid #ff3399;">
-
-            <div class="icon-circle mb-3 rounded-4">
-              <i class="bi bi-shop"></i>
-            </div>
-
-            <h3 class="fw-bold">Catering & Events</h3>
-            <p class="small">
-              Geburtstage, Firmenfeiern, Hochzeiten oder Events – Donuts sorgen für ein süßes Highlight.
-            </p>
-
-            <a href="service-details.html" class="my_button mt-2 d-inline-block">
-              Mehr erfahren
-            </a>
-          </div>
-        </div>
-
-    
-
-        <div class="col-lg-4 col-md-6 col-xxl-3">
-          <div class="p-4 rounded-5  text-center"
-          style="background:white; box-shadow: 0 15px 30px rgba(0,0,0,0.1); color:#ff3399; border:3px solid #ff3399;">
-  
-          <div class="icon-circle mb-3 rounded-4">
-            <i class="bi bi-truck"></i>
-            </div>
-  
-            <h3 class="fw-bold">Lieferung in ganz Österreich</h3>
-            <p class="small">
-              Schnell, zuverlässig und frisch direkt zu dir nach Hause oder ins Büro.
-            </p>
-  
-            <a href="service-details.html" class="my_button mt-2 d-inline-block">
-              Mehr erfahren
-            </a>
-          </div>
-        </div>
-  
-        <div class="col-lg-4 col-md-6 col-xxl-3">
-          <div class="p-4 rounded-5  text-center"
-          style="background:white; box-shadow: 0 15px 30px rgba(0,0,0,0.1); color:#ff3399; border:3px solid #ff3399;">
-  
-            <div class="icon-circle mb-3 rounded-4">
-              <i class="bi bi-stars"></i>
-            </div>
-  
-            <h3 class="fw-bold">Premium Kreationen</h3>
-            <p class="small">
-              Limitierte Sorten, exklusive Geschmacksrichtungen und Premium-Designs.
-            </p>
-  
-            <a href="service-details.html" class="my_button mt-2 d-inline-block bg-transparent">
-              Mehr erfahren
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <style>
-    .icon-circle {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      background: #ff3399;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      font-size: 2rem;
-      color: white;
-    }
-  </style> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- ======== KONTAKT ======== -->
-  <!-- ======== KONTAKT ======== -->
-  <!-- ======== KONTAKT ======== -->
-  <!-- ======== KONTAKT ======== -->
-  <!-- ======== KONTAKT ======== -->
-  <section id="kontakt" class="m-0 p-0 py-5 d-none">
-
-
-
-
+  <!-- products Section -->
+  <section id="products" class="portfolio section">
 
     <!-- Section Title -->
-    <div class="container text-center " data-aos="fade-up">
-      <span class="   m-0 p-2 px-4 text-white fw-bold rounded-4" style="background-color:#ff3399;">DonutLOVE</span>
-      <h2 class="m-0 p-0 mt-4 mb-3" style="color:#ff3399; font-weight:700;">Kontakt aufnehmen</h2>
-      <p class="m-0 p-0 mx-auto mb-4 text-secondary" style="max-width:720px; ">
-        Wir sind für Sie da, um Ihre Donut-Träume wahr werden zu lassen.
+    <div class="container section-title" data-aos="fade-up">
+      <span class="subtitle">MADE in Житомир</span>
+      <h2>МЕРЧ</h2>
+      <p>Мерч нашої спільноти — речі, що підтримують ініціативи та роблять місто яскравішим і комфортнішим.
+      </p>
+    </div><!-- End Section Title -->
 
+
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+          <li data-filter="*" class="filter-active">Усі Проєкти</li>
+          <!-- <li data-filter=".filter-actual">Активні</li> -->
+          <li data-filter=".filter-2025">2025</li>
+          <li data-filter=".filter-2024">2024</li>
+          <li data-filter=".filter-2023">2023</li>
+
+
+        </ul>
+
+        <div id="products_2" style="text-align: center !important;" class="m-0 p-0  row  isotope-container justify-content-center" data-aos="fade-up"></div>
+
+        <div class="text-center">
+          <button id="loadMoreProjects" style="border: 1px solid  color-mix(in srgb, var(--default-color), transparent 85%) !important;" class="btn btn-primary py-2 py-4 px-4 mt-4 w-100 bg-transparent  border-start-0 border-secondary  border-end-0  r text-primary" style="display:none; margin-top:30px">
+            Завантажити ще
+          </button>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+
+
+ 
+
+  </section><!-- /products Section -->
+
+
+
+
+
+
+
+
+
+  <section id="delivery" class="delivery section">
+
+    <div class="container section-title" data-aos="fade-up">
+      <span class="subtitle">Швидко та зручно</span>
+      <h2>Доставка</h2>
+      <p>
+        Ми подбали, щоб ваші замовлення прибували швидко, безпечно та у найкращому вигляді.
       </p>
     </div>
-
-    <div class="m-0 p-0 mx-auto container">
-      <div class="m-0 p-2 row justify-content-center ">
-
-        <!-- LEFT SIDE: CONTACT INFO -->
-        <div class="m-0 p-2 col-12 col-md-10 col-lg-8 col-xl-5">
-          <div class="m-0 p-0 row">
-
-            <!-- Kontakt aufnehmen -->
-            <!-- <div class="m-0 my-2 p-3 rounded-4 border border-4 border-white"
-              style="background:white; color:#ff3399; box-shadow: 0 15px 30px rgba(0,0,0,0.1)">
-              <div class="row">
-                <div class="col-auto d-flex align-items-center">
-                  <div class="icon-circle-sm">
-                    <i class="bi bi-envelope-fill"></i>
-                  </div>
-                </div>
-                <div class="col">
-                  <h4 class="m-0 p-0">Kontakt aufnehmen</h4>
-                  <p class="m-0 mt-1 small">
-                    Wir sind für Sie da, um Ihre Donut-Träume wahr werden zu lassen.
-                  </p>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- EMAIL -->
-            <div class="m-0 my-2 p-3 rounded-4 "
-              style="background:white; color:#ff3399; box-shadow: 0 15px 30px rgba(0,0,0,0.1); border:3px solid #ff3399;">
-              <div class="row">
-                <div class="col-auto d-flex align-items-center">
-                  <div class="icon-circle-sm">
-                    <i class="bi bi-envelope-paper-fill"></i>
-                  </div>
-                </div>
-                <div class="col">
-                  <span class="d-block fw-bold">E-Mail</span>
-                  <span>info@donutbox.at</span>
-                </div>
-              </div>
+    
+  
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+  
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="delivery-card">
+            <div class="delivery-icon">
+              <i class="bi bi-truck"></i>
             </div>
-
-            <!-- TELEFON -->
-            <!-- <div class="m-0 my-2 p-3 rounded-4 border border-4 border-white"
-              style="background:white; color:#ff3399; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
-              <div class="row">
-                <div class="col-auto d-flex align-items-center">
-                  <div class="icon-circle-sm">
-                    <i class="bi bi-telephone-fill"></i>
-                  </div>
-                </div>
-                <div class="col">
-                  <span class="d-block fw-bold">Rufen Sie uns an</span>
-                  <span>+43 123 456 789</span>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- ADRESSE -->
-            <div class="m-0 my-2 p-3 rounded-4"
-              style="background:white; color:#ff3399; box-shadow: 0 15px 30px rgba(0,0,0,0.1); border:3px solid #ff3399;">
-              <div class="row">
-                <div class="col-auto d-flex align-items-center">
-                  <div class="icon-circle-sm">
-                    <i class="bi bi-geo-alt-fill"></i>
-                  </div>
-                </div>
-                <div class="col">
-                  <span class="d-block fw-bold">Besuchen Sie uns</span>
-                  <span>Donutstraße 10<br>1010 Wien, Österreich</span>
-                </div>
-              </div>
-            </div>
-
+            <h4>По Україні</h4>
+            <p>
+              Доставка Новою Поштою у будь-яке місто України протягом
+              <strong>1–2 днів</strong>.
+            </p>
           </div>
         </div>
-
-        <div class="m-0 p-2 col-12 col-md-10 col-lg-8 col-xl-7">
-          <div class="m-0 p-0 row">
-
-            <div class="m-0 p-3 col-12 rounded-5 "
-              style="background:white; box-shadow: 0 15px 30px rgba(0,0,0,0.1); color:#ff3399; border:3px solid #ff3399;">
-
-              <div class="m-0 p-2 row justify-content-center">
-                <div class="col-auto">
-                  <h3 class="m-0 p-2" style="color:#ff3399;">Schreiben Sie uns</h3>
-                </div>
-              </div>
-
-              <form id="contact-form" class="m-0 p-2 row" action="https://formspree.io/f/myzbqryy" method="POST">
-
-                <div class="m-0 p-2 col-md-6">
-                  <input type="text" name="name" class="m-0 p-2 px-3 w-100 rounded-4 border"
-                    style="border-color:#ff3399;" placeholder="NAME" required="">
-                </div>
-
-                <div class="m-0 p-2 col-md-6">
-                  <input type="email" name="email" class="m-0 p-2 px-3 w-100 rounded-4 border"
-                    style="border-color:#ff3399;" placeholder="E-MAIL" required="">
-                </div>
-
-                <div class="m-0 p-2 col-md-12">
-                  <input type="text" name="subject" class="m-0 p-2 px-3 w-100 rounded-4 border"
-                    style="border-color:#ff3399;" placeholder="BETREFF" required="">
-                </div>
-
-                <div class="m-0 p-2 pb-0 col-md-12">
-                  <textarea name="message" class="m-0 p-2 px-3 w-100 rounded-4 border" style="border-color:#ff3399;"
-                    rows="6" placeholder="KOMMENTAR" required=""></textarea>
-                </div>
-              </form>
-
-              <div class="m-0 p-2 row justify-content-center">
-                <div class="m-0 p-2 col-md-12 text-center">
-                  <button class="my_button" type="submit" form="contact-form">Senden</button>
-
-                  <p id="form-status" style="margin-top: 15px; color: #00cc66; display: none;">
-                    ✅ Повідомлення надіслано!
-                  </p>
-                </div>
-              </div>
-
+  
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="delivery-card">
+            <div class="delivery-icon">
+              <i class="bi bi-clock-history"></i>
             </div>
-
+            <h4>Термін виконання</h4>
+            <p>
+              Замовлення готується індивідуально та відправляється
+              у день готовності.
+            </p>
           </div>
         </div>
-
+  
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="delivery-card">
+            <div class="delivery-icon">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <h4>Надійне пакування</h4>
+            <p>
+              Кожен бокс пакується так, щоб зберегти
+              свіжість і презентабельний вигляд.
+            </p>
+          </div>
+        </div>
+  
       </div>
     </div>
+  
   </section>
-
-  <style>
-    .icon-circle-sm {
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      background: #ff3399;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.5rem;
-    }
-  </style>
+  
 
 
 
+  <section id="faq" class="faq section">
 
-
-
-
-
-
-  <!-- ======== FOOTER ======== -->
-  <!-- ======== FOOTER ======== -->
-  <!-- ======== FOOTER ======== -->
-  <!-- ======== FOOTER ======== -->
-  <!-- ======== FOOTER ======== -->
-  <!-- ======== FOOTER ======== -->
-  <footer
-    class="m-0 p-0 mt-5 pt-5  d-flex justify-content-center text-white rounded-top-piyll border-top border-3 border-white bg-primary"
-    style="box-shadow: 1px 1px 15px gray; ">
-    <div class="m-0 p-0 container">
-
-      <div class="m-0 p-3 row ">
-        <div class="m-0 p-0 col-12 display-3 text-center fw-bold">MADE in Zhytomyr</div>
-      </div>
-
-
-      <div class="m-0 p-0 py-2 row justify-content-center">
-        <a href="/" class="my_link col-12 col-md-auto">ÜBER UNS</a>
-        <a href="/" class="my_link col-12 col-md-auto">DONUTS BOX</a>
-        <a href="/" class="my_link col-12 col-md-auto">LIFERUNG</a>
-        <a href="/" class="my_link col-12 col-md-auto">KONTAKT</a>
-      </div>
-
-
-      <div class="m-0 p-3 row justify-content-center">
-        <div class="my_social col-auto fab fa-facebook-f"></div>
-        <div class="my_social col-auto fab fa-instagram"></div>
-        <div class="my_social col-auto fab fa-tiktok"></div>
-      </div>
-
-
-      <div class="m-0 p-0 pt-5 px-3 row">
-        <div class="m-0 p-0  col-12 border-top border-white"></div>
-      </div>
-
-
-      <div class="m-0 p-0 row justify-content-center">
-
-
-        <!-- <div class="m-0 p-0 col-12 col-lg-auto">
-          <div class="m-0 p-2  row justify-content-between justify-content-md-center">
-            <div class="m-0 p-2  col-md-auto text-center small ">Impressum</div>
-            <div class="m-0 p-2  col-md-auto text-center small ">Datenschutz</div>
-            <div class="m-0 p-2  col-md-auto text-center small ">Barrierefreiheitserklärung</div>
-            <div class="m-0 p-2  col-md-auto text-center small">AGB</div>
+    <div class="container section-title" data-aos="fade-up">
+      <span class="subtitle">Корисна інформація</span>
+      <h2>FAQ</h2>
+      <p>Відповіді на найпоширеніші запитання щодо замовлення та доставки</p>
+    </div>
+  
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="faq-list">
+  
+        <div class="faq-item">
+          <button class="faq-question">
+            Як швидко виконується замовлення?
+            <i class="bi bi-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Кожне замовлення готується індивідуально. Термін виконання —
+              <strong>1–2 дні</strong> залежно від обʼєму.
+            </p>
           </div>
-        </div> -->
+        </div>
+  
+        <div class="faq-item">
+          <button class="faq-question">
+            Якою службою здійснюється доставка?
+            <i class="bi bi-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Доставка здійснюється Новою Поштою по всій Україні.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq-item">
+          <button class="faq-question">
+            Чи можна замовити на конкретну дату?
+            <i class="bi bi-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Так, ви можете вказати бажану дату доставки при оформленні замовлення.
+            </p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+  </section>
+  
 
 
 
-        <div class="m-0 p-0 px-3 col-12 d-block d-lg-none">
-          <div class="m-0 p-0 row border-top border-white"></div>
+
+  <section id="contact" class="contact section">
+
+    <div class="container section-title" data-aos="fade-up">
+      <span class="subtitle">Звʼязок з нами</span>
+      <h2>Контакт</h2>
+      <p>
+        Маєте запитання або хочете зробити замовлення?
+        Напишіть нам — ми завжди на звʼязку.
+      </p>
+    </div>
+  
+    <section class="contacts-section" data-aos="fade-up">
+      <div class="container">
+        <div class="contacts-grid">
+    
+          <div class="contact-block">
+            <span class="contact-tag">Місто</span>
+            <h3>Житомир, Україна</h3>
+          </div>
+    
+          <div class="contact-block">
+            <span class="contact-tag">Телефон</span>
+            <h3>+38 000 000 00 00</h3>
+          </div>
+    
+          <div class="contact-block">
+            <span class="contact-tag">Email</span>
+            <h3><a href="mailto:info@example.com">info@example.com</a></h3>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+  
+  </section>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ======== FOOTER ======== -->
+  <!-- ======== FOOTER ======== -->
+  <!-- ======== FOOTER ======== -->
+  <!-- ======== FOOTER ======== -->
+  <!-- ======== FOOTER ======== -->
+  <!-- ======== FOOTER ======== -->
+
+
+
+
+  <footer id="footer" class="footer px-2">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">MADE in Житомир</span>
+          </a>
+          <p>Спільнота житомирян, яка об’єднує людей, що прагнуть зробити місто сучасним, комфортним та
+            креативним.
+            Разом ми реалізуємо проєкти для розвитку культури, бізнесу та міського простору.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.instagram.com/madeinzhytomyr/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://t.me/madeinzhytomyr884" target="_blank"><i class="bi bi-telegram"></i></a>
+            <a href="https://www.tiktok.com/@madeinzhytomyr" target="_blank"><i class="bi bi-tiktok"></i></a>
+            <a href="https://www.youtube.com/@madeinzhytomyr" target="_blank"><i class="bi bi-youtube"></i></a>
+
+            <a href="https://t.me/madeinzhytomyr_884" target="_blank" style="width: 75px;"
+              class="rounded-pill">Звіти</a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-6 footer-links">
+          <h4>ПОСИЛАННЯ</h4>
+          <ul>
+            <li><a href="#products">Мерч</a></li>
+            <li><a href="#delivery">Доставка</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#contact">Контакт</a></li>
+          </ul>
+        </div>
+
+     
+
+        <div class="col-lg-3 col-md-12 footer-contact text-md-start">
+          <h4>КОНТАКТ</h4>
+
+          <div class="d-flex align-items-center mb-2">
+            <i class="bi bi-geo-alt-fill me-2 text-secndary fs-5"></i>
+            <p class="mb-0">м. Житомир, Україна</p>
+          </div>
+
+          <div class="d-flex align-items-center ">
+            <i class="bi bi-envelope-fill me-2 text-secodary fs-5"></i>
+            <a href="mailto:madeinzhytomyr884@gmail.com" class="text-decoration-none text-white fw-semibold">
+              madeinzhytomyr884@gmail.com
+            </a>
+          </div>
         </div>
 
 
 
-        <div class="m-0 p-0 col-lg-auto">
-          <div class="m-0 p-2 row">
-            <div class="m-0 p-2 col-lg-auto text-center small">© 2025 MADE in Zhytomyr. <span class="m-0 p-1 "></span>Alle
-              Rechte vorbehalten</div>
-          </div>
-        </div>
-
 
       </div>
+    </div>
+
+    <div class="container copyright text-center mt-4 rounded-3">
+      <p>© <span>2025</span> <strong class="px-1 sitename">MADE in Житомир</strong> <span>Всі права
+          захищені</span></p>
 
     </div>
+
   </footer>
-
-
 
 
 
@@ -1659,6 +548,8 @@
   <!-- ======== FIREBASE  ======== -->
   <!-- ======== FIREBASE  ======== -->
   <script type="module" src="firebase.js"></script>
+
+
 
 
 

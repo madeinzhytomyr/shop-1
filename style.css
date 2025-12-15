@@ -5,19 +5,32 @@
     --dp_add_hover: #f7cb06;
 }
 
-body {
-    font-family: "DynaPuff", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 100;
+
+
+@font-face {
+    font-family: 'Playpen_Sans';
+    src: url('/fonts/Playpen_Sans/PlaypenSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
-    font-family: system-ui;
-    
-    font-family: "Caveat", cursive;
+    font-display: swap;
+}
 
 
 
-    /* font-variation-settings: "wdth" 100;background: linear-gradient(to bottom, #fff0f5, #ffe6f2);
-    font-variation-settings: "wdth" 100;background: linear-gradient(to bottom, #d3d3d3, #ffffff); */
+
+
+:root {
+    --default-font: "Playpen_Sans" !important;
+    --heading-font: "Playpen_Sans"!important;
+    --nav-font: "Playpen_Sans"!important;
+}
+
+
+body {
+
+
+    font-family: var(--default-font)!important;
+
 
 }
 
@@ -355,7 +368,7 @@ a {
 
 /* ===== Заголовок ===== */
 .hero-title {
-    font-family: "Poppins", sans-serif;
+
     font-weight: 900;
     font-size: clamp(3rem, 6vw, 4.5rem);
     text-transform: uppercase;
@@ -1308,12 +1321,6 @@ body {
     background-color: var(--background-color);
     font-family: var(--default-font);
 
-    /* font-family: "Faustina", serif !important;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal; */
-
-        font-family: "Caveat", cursive !important;
 
 }
 
@@ -2480,7 +2487,5 @@ section,
   
   
   
-  
-  
-  
+
 

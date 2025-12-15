@@ -3,18 +3,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 :root {
     --dp_bg: #ffffff;
     --dp_post: #f5f3f3;
@@ -25,7 +13,7 @@
 
 
 @font-face {
-    font-family: 'Playpen_Sans';
+    font-family: 'Playpen Sans';
     src: url('/fonts/Playpen_Sans/PlaypenSans-VariableFont_wght.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
@@ -37,9 +25,9 @@
 
 
 :root {
-    --default-font: "Playpen_Sans" !important;
-    --heading-font: "Playpen_Sans"!important;
-    --nav-font: "Playpen_Sans"!important;
+    --default-font: "Playpen Sans" !important;
+    --heading-font: "Playpen Sans"!important;
+    --nav-font: "Playpen Sans"!important;
 }
 
 
@@ -2491,6 +2479,7 @@ section,
   
   
   
+
 
 
 

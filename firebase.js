@@ -80,6 +80,87 @@
             const visitorRef = ref(db, "visitors/" + visitorKey);
 
             const snapshot = await get(visitorRef);
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+        // 🔧 Firebase 
+
+
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getDatabase, ref, set, update, get, onValue } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyABl_hkCyPptAAnNwqRl2-ENQG3gHyD7og",
+            authDomain: "project-1-dc10e.firebaseapp.com",
+            databaseURL:
+                "https://project-1-dc10e-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "project-1-dc10e",
+            storageBucket: "project-1-dc10e.firebasestorage.app",
+            messagingSenderId: "457977027750",
+            appId: "1:457977027750:web:235ce9f2b8b981c9cce867",
+            measurementId: "G-GYTEDXSWFD",
+        };
+
+        // 🚀 Ініціалізація Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+
+
+
+
+        // ========================= Отримання IP =========================
+        async function getUserIP() {
+            try {
+                const res = await fetch("https://api.ipify.org?format=json");
+                const data = await res.json();
+                return data.ip;
+            } catch (err) {
+                console.error("Не вдалося отримати IP:", err);
+                return "unknown";
+            }
+        }
+
+
+
+
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+        // ========================= Реєстрація користувача =========================
+
+        async function addVisitor() {
+            const ip = await getUserIP();
+            if (ip === "unknown") return;
+
+            const visitorKey = ip.replace(/\./g, "_");
+            const visitorRef = ref(db, "visitors/" + visitorKey);
+
+            const snapshot = await get(visitorRef);
             if (!snapshot.exists()) {
                 await set(visitorRef, {
                     ip,
@@ -300,12 +381,12 @@
 
                     // Шаблон порожнього кошика
                     const emptyCartHTML = `
-                        <div id="usersContainer" style="color: #ff3399;" class="m-0 p-0 py-3 col-12 d-flex flex-column gap-3 ">
+                        <div id="usersContainer" style="color: #ff3399; background-color: #141414" class="m-0 p-0 py-3 col-12 d-flex flex-column gap-3 ">
                             <div class="empty-cart-alert d-flex flex-column align-items-center justify-content-center text-center p-5 rounded-4 shadow-sm">
-                                <i class="fas fa-shopping-cart fa-4x mb-3 cart-icon "></i>
-                                <strong class="fs-4">Der Warenkorb ist leer.</strong>
+                                <i class="fas fa-shopping-cart fa-4x mb-3 cart-icon text-primary"></i>
+                                <strong class="fs-4">Кошик для покупок порожній.</strong>
                                 <p class="mt-2 mb-0 text-muted fs-5">
-                                    Fügen Sie Produkte hinzu, um Ihren Einkauf zu starten! 🍩
+                                    Додайте товари, щоб почати робити покупки!
                                 </p>
                             </div>
                         </div>
@@ -330,7 +411,7 @@
                     // Є товари → рендеримо
                     user.products.forEach((p, index) => {
                         const div = document.createElement("div");
-                        div.className = "m-0 p-0 py-3 row cart-item";
+                        div.className = "m-0 p-0 pt-4 mt-2 row cart-item border-0";
 
                         div.innerHTML = `
                                         <img class="m-0 p-0 col-auto " src = "${p.image}" alt = "${p.name}" >
@@ -340,7 +421,7 @@
 
                                 <div class="m-0 p-0 row">
 
-                                    <a href="${p.link}" class="my_link_card col ">${p.name}</a>
+                                    <a href="${p.link}" class="my_link_card col text-white fw-normal">${p.name}</a>
 
                                     <button onclick="deleteProduct('${visitorKey}', ${index})" class="my_icon m-0 p-2 col-auto btn btn-sm btn-outline-danger  text-danger border-0 bg-transparent fa-solid fa-xmark fs-5"></button>
 
@@ -349,9 +430,9 @@
                                 <div class="m-0 p-0 row align-items-center">
 
                                     <div class="m-0 p-2 col cart-item-controls">
-                                        <button style="width: 32px; height: 32px;" class="my_button rounded-3 fw-bold" onclick="MinusAmount('${visitorKey}', ${index})">−</button>
-                                        <input style="width: 36px; height: 32px;" class="m-0 p-0 rounded-3" type="number" value="${p.amount}" disabled>
-                                        <button style="width: 32px; height: 32px;" class="my_button rounded-3 fw-bold"  onclick="PlusAmount('${visitorKey}', ${index})">+</button>
+                                        <button style="width: 32px; height: 32px;" class="my_button rounded-3 fw-bold mt-0" onclick="MinusAmount('${visitorKey}', ${index})">−</button>
+                                        <input style="width: 36px; height: 32px;" class="m-0 p-0 rounded-3 text-white" type="number" value="${p.amount}" disabled>
+                                        <button style="width: 32px; height: 32px;" class="my_button rounded-3 fw-bold mt-0"  onclick="PlusAmount('${visitorKey}', ${index})">+</button>
                                     </div>
 
                                      <div class="m-0 p-2 col-auto text-end">
@@ -556,6 +637,8 @@
                 console.error("❌ Firebase error:", err);
             }
         };
+
+
 
 
 
